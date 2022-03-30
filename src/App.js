@@ -4,6 +4,8 @@ function App() {
   return (
     <div className="App">
 			{'Online-store'}
+			{'Online-store'}
+			{'Online-store'}
     </div>
   );
 }
