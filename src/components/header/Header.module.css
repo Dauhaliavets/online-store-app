@@ -1,0 +1,11 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 0 15px;
+	background-color: #141920;
+}
+
+.logo {
+	margin-right: 100px;
+}
