@@ -1,11 +1,13 @@
-import './App.css';
+import s from './App.module.css';
+
+
 
 function App() {
-  return (
-    <div className="App">
+	return (
+		<div className={s.wrapper}>
 			{'Online-store'}
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;
