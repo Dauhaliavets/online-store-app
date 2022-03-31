@@ -5,7 +5,18 @@
 	font-family: 'Roboto';
 }
 
+a,
+a:visited,
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
 .wrapper {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	max-width: 1440px;

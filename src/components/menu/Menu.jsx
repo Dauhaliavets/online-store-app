@@ -1,12 +1,22 @@
 import React from 'react';
+import { useState } from 'react';
+import Burger from './Burger';
 import s from './Menu.module.css';
+import burger from '../../assets/icons/burger.svg';
 
 
 
 const Menu = () => {
+	const [menuToggle, setMenuToggle] = useState(false)
+
 	return (
-		<div className={s.wrapper}>
-			<div className={s.burger}>All</div>
+		<div className={s.wrapper} >
+			<div className={menuToggle ? s.blur : false} onClick={() => setMenuToggle(false)} />
+			<Burger menuToggle={menuToggle} setMenuToggle={setMenuToggle} />
+			<div className={s.burger}>
+				<img src={burger} alt="burger-icon" onClick={() => setMenuToggle(!menuToggle)} />
+				<p className={s.category}>All</p>
+			</div>
 			<div className={s.categories}>
 				<div className={s.category}>Computer</div>
 				<div className={s.category}>Notebooks</div>
