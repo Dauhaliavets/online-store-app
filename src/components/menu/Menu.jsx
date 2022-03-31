@@ -11,7 +11,6 @@ const Menu = () => {
 
 	return (
 		<div className={s.wrapper} >
-			<div className={menuToggle ? s.blur : undefined} onClick={() => setMenuToggle(false)} />
 			<Burger menuToggle={menuToggle} setMenuToggle={setMenuToggle} />
 			<div className={s.burger}>
 				<img src={burger} alt="burger-icon" onClick={() => setMenuToggle(!menuToggle)} />

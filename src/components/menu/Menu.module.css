@@ -6,14 +6,6 @@
 	background-color: #252F3D;
 }
 
-.blur {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-	left: 400px;
-	backdrop-filter: blur(2px);
-}
-
 .burger {
 	display: flex;
 	margin-right: 25px;
