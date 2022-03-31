@@ -1,0 +1,23 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.cart {
+	position: relative;
+	margin-right: 5px;
+}
+
+.counter {
+	position: absolute;
+	top: -3px;
+	left: 9px;
+	color: #FF9900;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.name {
+	font-size: 14px;
+	color: #fff;
+}
