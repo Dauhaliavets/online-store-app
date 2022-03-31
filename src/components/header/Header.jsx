@@ -4,6 +4,7 @@ import logo from '../../assets/images/logo.png';
 import Form from '../search/Form';
 import Account from '../account/Account';
 import Cart from '../cart/Cart';
+import Menu from '../menu/Menu';
 
 
 
@@ -16,6 +17,7 @@ const Header = () => {
 				<Account />
 				<Cart />
 			</div>
+			<Menu />
 		</div>
 	)
 }

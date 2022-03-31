@@ -1,0 +1,27 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding: 0 25px;
+	background-color: #252F3D;
+}
+
+.burger {
+	margin-right: 25px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.categories {
+	display: flex;
+	align-items: center;
+}
+
+.category {
+	font-size: 14px;
+	color: #fff;
+}
+
+.category:not(:last-child) {
+	margin-right: 25px;
+}
