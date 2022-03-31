@@ -6,7 +6,8 @@ import close from '../../assets/icons/close.svg';
 
 const Burger = ({ menuToggle, setMenuToggle }) => {
 	return (
-		<div className={menuToggle ? s.active : s.menu}>
+		<div className={menuToggle ? s.active : s.menu} >
+			<div className={menuToggle ? s.blur : undefined} onClick={() => setMenuToggle(false)} />
 			<img className={s.close} src={close} alt="close-icon" onClick={() => setMenuToggle(false)} />
 			<h2 className={s.account}>Hello, John!</h2>
 			<nav className={s.body}>
