@@ -68,6 +68,11 @@
 	cursor: pointer;
 }
 
+.button:hover {
+	background: #f0c14b;
+	border-color: #a88734 #9c7e31 #846a29;
+}
+
 .text {
 	font-size: 11px;
 	color: #111;
