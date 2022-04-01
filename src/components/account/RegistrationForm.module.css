@@ -1,11 +1,19 @@
 .wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 1000px;
-	height: 1000px;
+	width: 100%;
+	height: 100vh;
 	background-color: #fff;
 	padding-top: 20px;
+}
+
+.wrapper__off {
+	display: none;
 }
 
 .logo {
@@ -48,6 +56,7 @@
 
 .warning {
 	font-size: 11px;
+	color: #c40000;
 	margin: 3px 0 0 2px;
 }
 
@@ -86,4 +95,11 @@ input:focus {
 .button:hover {
 	background: #f0c14b;
 	border-color: #a88734 #9c7e31 #846a29;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
 }
