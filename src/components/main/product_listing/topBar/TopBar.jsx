@@ -11,11 +11,11 @@ function ResultAndSort() {
 	const options = OPTIONS.map((option) => {
 		return (
 			<div className={s.option}
-			key={option}
-			onClick={(e) => {
-				setSort(e.target.textContent)
-				setIsActive(false)
-			}}>
+				key={option}
+				onClick={(e) => {
+					setSort(e.target.textContent)
+					setIsActive(false)
+				}}>
 				{option}
 			</div>
 		);
@@ -28,7 +28,6 @@ function ResultAndSort() {
 				setIsActive(false)
 			}
 		}
-		
 		document.addEventListener('click', closeSelect)
 
 		return () => {
@@ -51,12 +50,11 @@ function ResultAndSort() {
 						alt=''/>
 					</button>
 					<div className={`${s.options} ${isActive ? s.active : ''}`}>
-							{options}
+						{options}
 					</div>
 				</div>
 			</div>
 		</>
-		
 	);
 }
 
