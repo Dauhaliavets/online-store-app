@@ -1,0 +1,24 @@
+.card_wrapper {
+	display: flex;
+	padding: 20px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+.card_image img {
+	width: 100px;
+}
+.card_description {
+	padding-left: 5px;
+	
+}
+.card_description_title {
+	/* height: 46px; */
+}
+.card_description_body {
+	font-style: 14px;
+}
+.card_price {
+	width: 100px;
+	flex-shrink: 0;
+	text-align: right;
+}
