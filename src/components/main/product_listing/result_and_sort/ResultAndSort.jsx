@@ -11,23 +11,23 @@ function ResultAndSort() {
 	const options = OPTIONS.map((option, index) => {
 		return (
 			<div className={s.option}
-			key={index}
-			onClick={(e) => {
-				setSort(e.target.textContent)
-				setIsActive(false)
-			}}>
+				key={index}
+				onClick={(e) => {
+					setSort(e.target.textContent)
+					setIsActive(false)
+				}}>
 				{option}
 			</div>
 		);
 	})
 
-	const closeSelect = (e) => {
-    if(catMenu.current && isActive && !catMenu.current.contains(e.target)){
-      setIsActive(false)
-    }
-	}
 
 	useEffect(() => {
+		const closeSelect = (e) => {
+			if (catMenu.current && isActive && !catMenu.current.contains(e.target)) {
+				setIsActive(false)
+			}
+		}
 		document.addEventListener('click', closeSelect)
 		return () => {
 			document.removeEventListener('click', closeSelect)
@@ -41,19 +41,17 @@ function ResultAndSort() {
 					<span>1-16 of over 2,000 results for <span className={s.user_request}>"phone"</span></span>
 				</div>
 				<div className={s.select} ref={catMenu}>
-					<button className={`${s.select_btn} ${isActive ? s.active : ''}` }
-					onClick={() => {setIsActive(!isActive)}}>
-						<span>Sort by: {sort}</span> 
-						<img className={isActive ? s.arrow_close : s.arrow} 
-						src={arrow}/>
+					<button className={`${s.select_btn} ${isActive ? s.active : ''}`}
+						onClick={() => { setIsActive(!isActive) }}>
+						<span>Sort by: {sort}</span>
+						<img className={isActive ? s.arrow_close : s.arrow} src={arrow} alt='arrow' />
 					</button>
 					<div className={`${s.options} ${isActive ? s.active : ''}`}>
-							{options}
+						{options}
 					</div>
 				</div>
 			</div>
 		</>
-		
 	);
 }
 
