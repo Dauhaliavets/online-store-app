@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './ProductListing.module.css';
-import ResultAndSort from './result_and_sort/ResultAndSort';
+import ResultAndSort from './topBar/TopBar';
 
 
 

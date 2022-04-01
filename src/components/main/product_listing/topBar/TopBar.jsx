@@ -1,17 +1,17 @@
 import React, { useEffect, useState, useRef } from 'react'
-import s from './ResultAndSort.module.css';
+import s from './TopBar.module.css';
 import arrow from '../../../../assets/icons/chevron-down 1.png'
 
 function ResultAndSort() {
 	const OPTIONS = ["Feature", "Price min", "Price Max", "Name"]
 	const [isActive, setIsActive] = useState(false)
 	const [sort, setSort] = useState(OPTIONS[0])
-	const catMenu = useRef(null)
+	const selectEl = useRef(null)
 
-	const options = OPTIONS.map((option, index) => {
+	const options = OPTIONS.map((option) => {
 		return (
 			<div className={s.option}
-			key={index}
+			key={option}
 			onClick={(e) => {
 				setSort(e.target.textContent)
 				setIsActive(false)
@@ -21,14 +21,16 @@ function ResultAndSort() {
 		);
 	})
 
-	const closeSelect = (e) => {
-    if(catMenu.current && isActive && !catMenu.current.contains(e.target)){
-      setIsActive(false)
-    }
-	}
-
 	useEffect(() => {
+		const closeSelect = (e) => {
+			const isNeedCloseSelect = selectEl.current && isActive && !selectEl.current.contains(e.target)
+			if(isNeedCloseSelect){
+				setIsActive(false)
+			}
+		}
+		
 		document.addEventListener('click', closeSelect)
+
 		return () => {
 			document.removeEventListener('click', closeSelect)
 		}
@@ -40,12 +42,13 @@ function ResultAndSort() {
 				<div className={s.results}>
 					<span>1-16 of over 2,000 results for <span className={s.user_request}>"phone"</span></span>
 				</div>
-				<div className={s.select} ref={catMenu}>
+				<div className={s.select} ref={selectEl}>
 					<button className={`${s.select_btn} ${isActive ? s.active : ''}` }
 					onClick={() => {setIsActive(!isActive)}}>
 						<span>Sort by: {sort}</span> 
 						<img className={isActive ? s.arrow_close : s.arrow} 
-						src={arrow}/>
+						src={arrow}
+						alt=''/>
 					</button>
 					<div className={`${s.options} ${isActive ? s.active : ''}`}>
 							{options}
