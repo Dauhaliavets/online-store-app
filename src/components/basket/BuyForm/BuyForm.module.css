@@ -1,0 +1,18 @@
+.wrapper {
+	width: 300px;
+	padding: 20px 20px 30px 20px;
+	background-color: #fff;
+	flex-shrink: 0;
+}
+
+.button {
+	width: 100%;
+	line-height: 28px;
+	background-color: #FFD814;
+	border: none;
+	border-radius: 7px;
+}
+.button:hover {
+	cursor: pointer;
+	background-color: #d6b92a;
+}
