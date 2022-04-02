@@ -4,12 +4,56 @@
 	border-top: 1px solid #dddddd;
 	border-bottom: 1px solid #dddddd;
 }
+.card_toggle_box {
+	padding-right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card_choised {
+	position: relative;
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+	background-color: #007185;
+	border: 1px solid #007185;
+	border-radius: 4px;
+}
+.card_choised:hover {
+	cursor: pointer;
+}
+.card_choised::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 2px;
+	width: 9px;
+	height: 4px;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	transform: rotate(-45deg);
+}
+.card_unchoised {
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+	background-color: #ffffff;
+	border: 1px solid #898c8c;
+	border-radius: 4px;
+}
+.card_unchoised:hover {
+	cursor: pointer;
+	border: 2px solid #007185;
+}
+.card_image {
+	display: flex;
+	align-items: center;
+}
 .card_image img {
-	width: 100px;
+	width: 150px;
 }
 .card_description {
 	padding-left: 5px;
-	
 }
 .card_description_title {
 	/* height: 46px; */
