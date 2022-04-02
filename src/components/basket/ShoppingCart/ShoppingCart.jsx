@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { getDataFromServer } from '../../../api/server';
 import SubTotal from '../SubTotal/SubTotal';
 import Card from './Card/Card';
 import Preloader from './Preloader/Preloader';
 import styles from './ShoppingCart.module.css';
 
-const getData = async () => {
-	let response = await fetch('http://localhost:3500/products');
-	let data = await response.json();
-	return data;
-};
+
 
 export default function ShoppingCart() {
 	const [data, setData] = useState(null);
@@ -16,7 +13,7 @@ export default function ShoppingCart() {
 	const [totalPrice, setTotalPrice] = useState(0);
 
 	useEffect(() => {
-		getData().then((data) => setData(data.splice(5, 7)));
+		getDataFromServer('products').then((data) => setData(data.splice(0, 2)));
 	}, []);
 	
 	useEffect(() => {
