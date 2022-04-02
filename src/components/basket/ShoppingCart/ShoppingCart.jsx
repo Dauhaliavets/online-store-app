@@ -5,8 +5,6 @@ import Card from './Card/Card';
 import Preloader from './Preloader/Preloader';
 import styles from './ShoppingCart.module.css';
 
-
-
 export default function ShoppingCart() {
 	const [data, setData] = useState(null);
 	const [cards, setCards] = useState([]);
