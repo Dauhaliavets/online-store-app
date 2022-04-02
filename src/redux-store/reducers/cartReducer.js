@@ -37,12 +37,12 @@ const initialState = [
 		}
 ]
 
-export default function cartsReducer(state = initialState, action) {
+export default function cartReducer(state = initialState, action) {
 	switch (action.type) {
 		case TOGGLE_CHOISE:
 			return {
 				...state,
-				
+
 			};
 	
 		default:
