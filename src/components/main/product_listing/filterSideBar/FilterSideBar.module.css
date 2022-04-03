@@ -1,0 +1,6 @@
+.wrapper {
+  min-height: 80vh;
+  max-width: 250px;
+  width: 100%;
+  background-color: gray;
+}

@@ -2,10 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 import s from './TopBar.module.css';
 import arrow from '../../../../assets/icons/chevron-down 1.png'
 
-function ResultAndSort() {
-	const OPTIONS = ["Feature", "Price min", "Price Max", "Name"]
+function ResultAndSort({ sort, setSort, OPTIONS}) {
 	const [isActive, setIsActive] = useState(false)
-	const [sort, setSort] = useState(OPTIONS[0])
 	const selectEl = useRef(null)
 
 	const options = OPTIONS.map((option) => {
