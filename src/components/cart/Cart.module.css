@@ -1,6 +1,6 @@
 .wrapper {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .cart {
@@ -10,14 +10,16 @@
 
 .counter {
 	position: absolute;
-	top: -3px;
-	left: 9px;
+	top: 0px;
+	left: 17px;
 	color: #FF9900;
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .name {
 	font-size: 14px;
 	color: #fff;
+	font-weight: 500;
+	padding-bottom: 8px;
 }

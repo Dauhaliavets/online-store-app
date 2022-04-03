@@ -4,8 +4,6 @@ import Burger from './Burger';
 import s from './Menu.module.css';
 import burger from '../../assets/icons/burger.svg';
 
-
-
 const Menu = () => {
 	const [menuToggle, setMenuToggle] = useState(false)
 

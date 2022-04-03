@@ -2,8 +2,6 @@ import React from 'react';
 import s from './Cart.module.css';
 import cart from '../../assets/icons/cart.svg';
 
-
-
 const Cart = () => {
 	return (
 		<div className={s.wrapper}>

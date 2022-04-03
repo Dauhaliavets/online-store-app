@@ -2,6 +2,14 @@
 	margin-right: 50px;
 }
 
+.blur {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
 .main {
 	position: relative;
 	margin-right: 5px;
