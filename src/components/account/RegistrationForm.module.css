@@ -1,12 +1,11 @@
 .wrapper {
 	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	width: 1920px;
 	height: 100vh;
 	background-color: #fff;
 	padding-top: 20px;
@@ -95,11 +94,4 @@
 .button:hover {
 	background: #f0c14b;
 	border-color: #a88734 #9c7e31 #846a29;
-}
-
-.close {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	cursor: pointer;
 }

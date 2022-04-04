@@ -85,13 +85,19 @@
 
 .text {
 	font-size: 11px;
-	color: #111;
 }
 
 .link {
 	border: none;
 	background-color: transparent;
 	font-size: 11px;
-	color: #05a;
 	cursor: pointer;
+}
+
+.ref_login {
+	color: #111111;
+}
+
+.ref_registration {
+	color: #0055aa;
 }

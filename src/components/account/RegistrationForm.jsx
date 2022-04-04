@@ -2,9 +2,8 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import s from './RegistrationForm.module.css';
 import logo from '../../assets/images/logo-dark.png';
-import close from '../../assets/icons/close-dark.svg';
 
-const RegistrationForm = ({ formToggle, setFormToggle }) => {
+const RegistrationForm = () => {
 	const {
 		register,
 		formState: {
@@ -17,13 +16,7 @@ const RegistrationForm = ({ formToggle, setFormToggle }) => {
 	} = useForm({ mode: "onBlur" });
 
 	return (
-		<div className={formToggle ? s.wrapper : s.wrapper__off}>
-			<img
-				className={s.close}
-				src={close}
-				alt="close-icon"
-				onClick={() => setFormToggle(!formToggle)}
-			/>
+		<div className={s.wrapper}>
 			<img
 				className={s.logo}
 				src={logo}
