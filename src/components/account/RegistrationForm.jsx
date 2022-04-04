@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { NavLink } from 'react-router-dom';
 import s from './RegistrationForm.module.css';
 import logo from '../../assets/images/logo-dark.png';
 
@@ -17,11 +18,13 @@ const RegistrationForm = () => {
 
 	return (
 		<div className={s.wrapper}>
-			<img
-				className={s.logo}
-				src={logo}
-				alt="logo"
-			/>
+			<NavLink to='/' className={s.logo}>
+				<img
+					className={s.logo}
+					src={logo}
+					alt="logo"
+				/>
+			</NavLink>
 			<form className={s.form} onSubmit={handleSubmit(() => reset())}>
 				<h2 className={s.title}>Create account</h2>
 				<div className={s.field}>
@@ -98,6 +101,7 @@ const RegistrationForm = () => {
 					<p className={s.warning}>{errors?.password_repeat?.message}</p>
 				</div>
 				<input className={s.button} type="submit" disabled={!isValid} value='Continue' />
+				<p className={s.text}>Already have an account? <NavLink to='/authorization' className={s.link}>Start here</NavLink></p>
 			</form>
 		</div>
 	)

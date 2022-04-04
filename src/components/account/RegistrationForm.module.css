@@ -87,11 +87,19 @@
 	background: linear-gradient(to bottom,#f8e3ad,#EEBA37);
 	font-size: 13px;
 	color: #111;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	cursor: pointer;
 }
 
 .button:hover {
 	background: #f0c14b;
 	border-color: #a88734 #9c7e31 #846a29;
+}
+
+.text {
+	font-size: 13px;
+}
+
+.link {
+	color: #0055aa;
 }
