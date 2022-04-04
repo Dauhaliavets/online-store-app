@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import s from './Account.module.css';
 import arrow from '../../assets/icons/arrow.svg';
-import RegistrationForm from './RegistrationForm';
-import LoginForm from './LoginForm';
 
 const Account = () => {
 	const [popupToggle, setPopupToggle] = useState(false)
@@ -19,11 +18,9 @@ const Account = () => {
 			</div>
 			<div className={popupToggle ? s.popup : s.popup__off}>
 				<div className={s.triangle}></div>
-				<button className={s.button} onClick={() => setLoginFormToggle(!loginFormToggle)}>Sign in</button>
-				<p className={s.text}>New customer? <button className={s.link} onClick={() => setFormToggle(!formToggle)}>Start here</button></p>
+				<NavLink to='/authorization' className={s.ref_login}><button className={s.button} onClick={() => setLoginFormToggle(!loginFormToggle)}>Sign in</button></NavLink>
+				<p className={s.text}>New customer? <button className={s.link} onClick={() => setFormToggle(!formToggle)}><NavLink to='/registration' className={s.ref_registration}>Start here</NavLink></button></p>
 			</div>
-			<RegistrationForm formToggle={formToggle} setFormToggle={setFormToggle} />
-			<LoginForm loginFormToggle={loginFormToggle} setLoginFormToggle={setLoginFormToggle} />
 		</div>
 	)
 }

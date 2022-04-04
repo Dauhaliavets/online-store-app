@@ -1,10 +1,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { NavLink } from 'react-router-dom';
 import s from './LoginForm.module.css';
 import logo from '../../assets/images/logo-dark.png';
-import close from '../../assets/icons/close-dark.svg';
 
-const LoginForm = ({ loginFormToggle, setLoginFormToggle }) => {
+const LoginForm = () => {
 	const {
 		register,
 		formState: {
@@ -16,13 +16,7 @@ const LoginForm = ({ loginFormToggle, setLoginFormToggle }) => {
 	} = useForm({ mode: "onBlur" });
 
 	return (
-		<div className={loginFormToggle ? s.wrapper : s.wrapper__off}>
-			<img
-				className={s.close}
-				src={close}
-				alt="close-icon"
-				onClick={() => setLoginFormToggle(!loginFormToggle)}
-			/>
+		<div className={s.wrapper}>
 			<img
 				className={s.logo}
 				src={logo}
@@ -69,7 +63,7 @@ const LoginForm = ({ loginFormToggle, setLoginFormToggle }) => {
 			<div className={s.subtitle}>
 				<p className={s.subtitle__text}>New to Amazon?</p>
 			</div>
-			<button className={s.button_grey}>Create your Amazon account</button>
+			<NavLink to='/registration' className={s.ref_registration}><button className={s.button_grey}>Create your Amazon account</button></NavLink>
 		</div>
 	)
 }
