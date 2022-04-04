@@ -6,8 +6,6 @@ import Account from '../account/Account';
 import Cart from '../cart/Cart';
 import Menu from '../menu/Menu';
 
-
-
 const Header = () => {
 	return (
 		<div className={s.wrapper}>

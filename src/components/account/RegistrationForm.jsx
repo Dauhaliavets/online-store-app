@@ -4,8 +4,6 @@ import s from './RegistrationForm.module.css';
 import logo from '../../assets/images/logo-dark.png';
 import close from '../../assets/icons/close-dark.svg';
 
-
-
 const RegistrationForm = ({ formToggle, setFormToggle }) => {
 	const {
 		register,

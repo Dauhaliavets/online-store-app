@@ -4,16 +4,15 @@ import arrow from '../../assets/icons/arrow.svg';
 import RegistrationForm from './RegistrationForm';
 import LoginForm from './LoginForm';
 
-
-
 const Account = () => {
 	const [popupToggle, setPopupToggle] = useState(false)
 	const [formToggle, setFormToggle] = useState(false)
 	const [loginFormToggle, setLoginFormToggle] = useState(false)
 
 	return (
-		<div className={s.wrapper}>
-			<div className={s.main} onClick={() => setPopupToggle(!popupToggle)}>
+		<div className={s.wrapper} onClick={() => setPopupToggle(!popupToggle)}>
+			<div className={popupToggle ? s.blur : undefined} />
+			<div className={s.main} >
 				<p className={s.greeting}>Hello, Sign in</p>
 				<p className={s.info}>Accounts & Lists</p>
 				<img className={s.arrow} src={arrow} alt="arrow" />

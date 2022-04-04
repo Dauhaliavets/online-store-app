@@ -4,7 +4,6 @@ import s from './LoginForm.module.css';
 import logo from '../../assets/images/logo-dark.png';
 import close from '../../assets/icons/close-dark.svg';
 
-
 const LoginForm = ({ loginFormToggle, setLoginFormToggle }) => {
 	const {
 		register,

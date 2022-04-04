@@ -4,8 +4,6 @@ import Select from './Select';
 import Input from './Input';
 import Button from './Button';
 
-
-
 const Form = () => {
 	return (
 		<div className={s.wrapper}>
