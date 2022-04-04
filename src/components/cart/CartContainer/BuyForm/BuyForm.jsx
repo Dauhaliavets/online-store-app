@@ -14,11 +14,13 @@ export default function BuyBox() {
 		return acc;
 	}, 0);
 
+	const countItems = cart.filter(card => card.isChoise).length;
+
 	return (
 		<div className={styles.wrapper}>
 			<form>
-				<SubTotal totalPrice={totalPrice} countItems={cart.length} />
-				<button className={styles.button}>{'Buy now'}</button>
+				<SubTotal totalPrice={totalPrice} countItems={countItems} />
+				<div className={styles.button}>{'Buy now'}</div>
 			</form>
 		</div>
 	);

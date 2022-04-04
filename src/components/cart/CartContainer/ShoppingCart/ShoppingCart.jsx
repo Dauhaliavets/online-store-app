@@ -14,7 +14,9 @@ export default function ShoppingCart() {
 			return +(acc.toFixed(2))
 		}
 		return acc;
-	}, 0)
+	}, 0);
+
+	const countItems = cart.filter(card => card.isChoise).length;
 
 	return (
 		<div className={styles.wrapper}>
@@ -22,7 +24,7 @@ export default function ShoppingCart() {
 			{
 				cart.map((item, index) => <Card key={index} data={item}/>)
 			}
-			<SubTotal totalPrice={totalPrice} countItems={cart.length} />
+			<SubTotal totalPrice={totalPrice} countItems={countItems} />
 		</div>
 	);
 }

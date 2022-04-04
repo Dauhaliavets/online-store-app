@@ -17,6 +17,7 @@ const initialState = [
     "currency": "BYN",
     "img": "https://cdn1.ozone.ru/s3/multimedia-a/wc250/6141818158.jpg",
 		"isChoise": true,
+		"count" : 1,
   },
   {
     "id": 5,
@@ -32,7 +33,9 @@ const initialState = [
     "price": 1214.79,
     "discount": 0,
     "currency": "BYN",
-    "img": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6026640582.jpg"
+    "img": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6026640582.jpg",
+		"isChoise": false,
+		"count" : 1,
   },
   {
     "id": 6,
@@ -50,6 +53,7 @@ const initialState = [
     "currency": "BYN",
     "img": "https://cdn1.ozone.ru/s3/multimedia-i/wc250/6155684538.jpg",
 		"isChoise": true,
+		"count" : 1,
   },
   {
     "id": 7,
@@ -65,7 +69,9 @@ const initialState = [
     "price": 1420.69,
     "discount": 15,
     "currency": "BYN",
-    "img": "https://cdn1.ozone.ru/s3/multimedia-a/wc250/6255363850.jpg"
+    "img": "https://cdn1.ozone.ru/s3/multimedia-a/wc250/6255363850.jpg",
+		"isChoise": true,
+		"count" : 1,
   },
 ];
 
