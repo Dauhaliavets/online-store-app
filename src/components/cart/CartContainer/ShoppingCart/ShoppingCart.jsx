@@ -10,11 +10,19 @@ export default function ShoppingCart() {
 
 	const totalPrice = cart.reduce((acc, cur) => {
 		if (cur.isChoise) {
-			acc = acc + +cur.price
+			acc = acc + (+cur.price * +cur.count)
 			return +(acc.toFixed(2))
 		}
 		return acc;
-	}, 0)
+	}, 0);
+
+	const countItems = cart.reduce((acc, cur) => {
+		if (cur.isChoise) {
+			acc = acc + +cur.count
+			return +(acc.toFixed(2))
+		}
+		return acc;
+	}, 0);
 
 	return (
 		<div className={s.wrapper}>
@@ -22,7 +30,7 @@ export default function ShoppingCart() {
 			{
 				cart.map((item, index) => <Card key={index} data={item} />)
 			}
-			<SubTotal totalPrice={totalPrice} countItems={cart.length} />
+			<SubTotal totalPrice={totalPrice} countItems={countItems} />
 		</div>
 	);
 }

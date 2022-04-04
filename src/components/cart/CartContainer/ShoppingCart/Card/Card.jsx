@@ -1,11 +1,14 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { toogleChoiseAction } from '../../../../../redux-store/actions/cartActions';
+import {
+	deleteCardAction,
+	toogleChoiseAction,
+} from '../../../../../redux-store/actions/cartActions';
 import s from './Card.module.css';
+import SelectQuantity from './SelectQuantity/SelectQuantity';
 
-export default function Card({ data }) {
-	const dispatch = useDispatch();
-	const {
+export default function Card({
+	data: {
 		category,
 		currency,
 		description,
@@ -15,14 +18,18 @@ export default function Card({ data }) {
 		price,
 		title,
 		isChoise,
-	} = data;
+		count,
+	},
+}) {
 	const arrDescr = [];
-
 	for (const [key, value] of Object.entries(description)) {
 		arrDescr.push(`${key} ${value}`);
 	}
 
+	const dispatch = useDispatch();
+
 	const toggleChoise = (cardId) => dispatch(toogleChoiseAction(cardId));
+	const deleteCard = (cardId) => dispatch(deleteCardAction(cardId));
 
 	return (
 		<div className={s.card_wrapper}>
@@ -39,17 +46,32 @@ export default function Card({ data }) {
 					></span>
 				)}
 			</div>
-
 			<div className={s.card_image}>
 				<img src={img} alt={title} />
 			</div>
 			<div className={s.card_description}>
 				<h3 className={s.card_description_title}>{title}</h3>
-				<div className={s.card_description_body}>{arrDescr}</div>
+				<div className={s.card_description_items}>
+					{arrDescr.map((item) => {
+						return (
+							<span key={item} className={s.card_description_item}>
+								{item}
+							</span>
+						);
+					})}
+				</div>
+				<div className={s.action_links}>
+					<SelectQuantity id={id} count={count} />
+					<span className={s.action_separator}></span>
+					<span className={s.action_link_delete} onClick={() => deleteCard(id)}>
+						{'Delete'}
+					</span>
+				</div>
 			</div>
 			<div className={s.card_price}>
 				<span>{price} </span>
 				<span>{currency}</span>
+				<div></div>
 			</div>
 		</div>
 	);

@@ -8,8 +8,16 @@ export default function BuyBox() {
 
 	const totalPrice = cart.reduce((acc, cur) => {
 		if (cur.isChoise) {
-			acc = acc + +cur.price;
+			acc = acc + (+cur.price * +cur.count)
 			return +acc.toFixed(2);
+		}
+		return acc;
+	}, 0);
+
+	const countItems = cart.reduce((acc, cur) => {
+		if (cur.isChoise) {
+			acc = acc + +cur.count
+			return +(acc.toFixed(2))
 		}
 		return acc;
 	}, 0);
@@ -17,8 +25,8 @@ export default function BuyBox() {
 	return (
 		<div className={s.wrapper}>
 			<form>
-				<SubTotal totalPrice={totalPrice} countItems={cart.length} />
-				<button className={s.button}>{'Buy now'}</button>
+				<SubTotal totalPrice={totalPrice} countItems={countItems} />
+				<div className={s.button}>{'Buy now'}</div>
 			</form>
 		</div>
 	);
