@@ -10,13 +10,19 @@ export default function ShoppingCart() {
 
 	const totalPrice = cart.reduce((acc, cur) => {
 		if (cur.isChoise) {
-			acc = acc + +cur.price
+			acc = acc + (+cur.price * +cur.count)
 			return +(acc.toFixed(2))
 		}
 		return acc;
 	}, 0);
 
-	const countItems = cart.filter(card => card.isChoise).length;
+	const countItems = cart.reduce((acc, cur) => {
+		if (cur.isChoise) {
+			acc = acc + +cur.count
+			return +(acc.toFixed(2))
+		}
+		return acc;
+	}, 0);
 
 	return (
 		<div className={s.wrapper}>

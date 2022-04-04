@@ -1,4 +1,5 @@
 const TOGGLE_CHOISE = 'TOGGLE_CHOISE';
+const CHANGE_COUNT = 'CHANGE_COUNT';
 
 const toogleChoiseAction = (payload) => {
 	return {
@@ -7,4 +8,11 @@ const toogleChoiseAction = (payload) => {
 	}
 }
 
-export { TOGGLE_CHOISE, toogleChoiseAction };
+const changeCountAction = (payload) => {
+	return {
+		type: CHANGE_COUNT,
+		payload,
+	}
+}
+
+export { TOGGLE_CHOISE, CHANGE_COUNT, toogleChoiseAction, changeCountAction };
