@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { toogleChoiseAction } from '../../../../redux-store/actions/cartActions';
+import { toogleChoiseAction } from '../../../../../redux-store/actions/cartActions';
 import styles from './Card.module.css';
 
 export default function Card({ data }) {
