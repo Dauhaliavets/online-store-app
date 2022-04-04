@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import Select from 'react-select';
 import { toogleChoiseAction } from '../../../../../redux-store/actions/cartActions';
-import styles from './Card.module.css';
+import s from './Card.module.css';
 
 export default function Card({ data }) {
 	const [selectedOption, setSelectedOption] = useState('1');
@@ -36,41 +36,41 @@ export default function Card({ data }) {
 	const toggleChoise = (cardId) => dispatch(toogleChoiseAction(cardId));
 
 	return (
-		<div className={styles.card_wrapper}>
-			<div className={styles.card_toggle_box}>
+		<div className={s.card_wrapper}>
+			<div className={s.card_toggle_box}>
 				{isChoise ? (
 					<span
-						className={styles.card_choised}
+						className={s.card_choised}
 						onClick={() => toggleChoise(id)}
 					></span>
 				) : (
 					<span
-						className={styles.card_unchoised}
+						className={s.card_unchoised}
 						onClick={() => toggleChoise(id)}
 					></span>
 				)}
 			</div>
-			<div className={styles.card_image}>
+			<div className={s.card_image}>
 				<img src={img} alt={title} />
 			</div>
-			<div className={styles.card_description}>
-				<h3 className={styles.card_description_title}>{title}</h3>
-				<div className={styles.card_description_items}>
+			<div className={s.card_description}>
+				<h3 className={s.card_description_title}>{title}</h3>
+				<div className={s.card_description_items}>
 					{arrDescr.map((item) => {
-						return <span className={styles.card_description_item}>{item}</span>;
+						return <span className={s.card_description_item}>{item}</span>;
 					})}
 				</div>
-				<div className={styles.action_links}>
+				<div className={s.action_links}>
 					<Select
 						defaultValue={selectedOption}
 						onChange={setSelectedOption}
 						options={options}
 					/>
-					<span className={styles.action_separator}></span>
-					<span className={styles.action_link_delete}>Delete</span>
+					<span className={s.action_separator}></span>
+					<span className={s.action_link_delete}>Delete</span>
 				</div>
 			</div>
-			<div className={styles.card_price}>
+			<div className={s.card_price}>
 				<span>{price} </span>
 				<span>{currency}</span>
 				<div></div>

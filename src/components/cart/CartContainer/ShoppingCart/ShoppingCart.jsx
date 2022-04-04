@@ -3,13 +3,13 @@ import { useSelector } from 'react-redux';
 import SubTotal from '../SubTotal/SubTotal';
 import Card from './Card/Card';
 import Preloader from './Preloader/Preloader';
-import styles from './ShoppingCart.module.css';
+import s from './ShoppingCart.module.css';
 
 export default function ShoppingCart() {
 	const cart = useSelector(state => state.cart);
 
 	const totalPrice = cart.reduce((acc, cur) => {
-		if(cur.isChoise) {
+		if (cur.isChoise) {
 			acc = acc + +cur.price
 			return +(acc.toFixed(2))
 		}
@@ -19,10 +19,10 @@ export default function ShoppingCart() {
 	const countItems = cart.filter(card => card.isChoise).length;
 
 	return (
-		<div className={styles.wrapper}>
-			<h3 className={styles.title}>ShoppingCart</h3>
+		<div className={s.wrapper}>
+			<h3 className={s.title}>ShoppingCart</h3>
 			{
-				cart.map((item, index) => <Card key={index} data={item}/>)
+				cart.map((item, index) => <Card key={index} data={item} />)
 			}
 			<SubTotal totalPrice={totalPrice} countItems={countItems} />
 		</div>

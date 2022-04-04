@@ -1,15 +1,16 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom';
 import s from './Main.module.css';
-import main from '../../assets/images/main.jpg';
-// import ProductListing from './product_listing/ProductListing';
+import ProductListing from './product_listing/ProductListing';
 import CartContainer from '../cart/CartContainer/CartContainer';
 
 const Main = () => {
 	return (
 		<div className={s.wrapper}>
-			{<img src={main} alt="main" /> &&
-				/* <ProductListing /> */
-				<CartContainer />}
+			<Routes>
+				<Route exact path="/products" element={<ProductListing />} />
+				<Route path="/cart" element={<CartContainer />} />
+			</Routes>
 		</div>
 	)
 }
