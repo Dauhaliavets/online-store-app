@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import SubTotal from '../SubTotal/SubTotal';
-import styles from './BuyForm.module.css';
+import s from './BuyForm.module.css';
 
 export default function BuyBox() {
 	const cart = useSelector((state) => state.cart);
@@ -15,10 +15,10 @@ export default function BuyBox() {
 	}, 0);
 
 	return (
-		<div className={styles.wrapper}>
+		<div className={s.wrapper}>
 			<form>
 				<SubTotal totalPrice={totalPrice} countItems={cart.length} />
-				<button className={styles.button}>{'Buy now'}</button>
+				<button className={s.button}>{'Buy now'}</button>
 			</form>
 		</div>
 	);

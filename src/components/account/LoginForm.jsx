@@ -17,11 +17,13 @@ const LoginForm = () => {
 
 	return (
 		<div className={s.wrapper}>
-			<img
-				className={s.logo}
-				src={logo}
-				alt="logo"
-			/>
+			<NavLink to='/' className={s.logo}>
+				<img
+					className={s.logo}
+					src={logo}
+					alt="logo"
+				/>
+			</NavLink>
 			<form className={s.form} onSubmit={handleSubmit(() => reset())}>
 				<h2 className={s.title}>Sign-In</h2>
 				<div className={s.field}>

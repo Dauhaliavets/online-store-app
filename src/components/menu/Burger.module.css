@@ -11,7 +11,7 @@
 
 .blur {
 	position: absolute;
-	width: 100vw;
+	width: calc(100vw - 400px);
 	height: 100vh;
 	left: 400px;
 	backdrop-filter: blur(2px);
