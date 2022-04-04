@@ -18,10 +18,8 @@ function ProductListing() {
 				setProducts(data)
 			})
 	},[])
-
-	if (!products) return "Not found"
 	
-	let sortedProducts = sortProducts(sort, products)
+	let sortedProducts = products ? sortProducts(sort, products) : []
 
 	return (
 		<div className={s.product_listing}>
