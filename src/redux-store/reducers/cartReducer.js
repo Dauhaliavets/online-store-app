@@ -1,4 +1,8 @@
-import { TOGGLE_CHOISE, CHANGE_COUNT } from '../actions/cartActions';
+import {
+	TOGGLE_CHOISE,
+	CHANGE_COUNT,
+	DELETE_CARD,
+} from '../actions/cartActions';
 
 const initialState = [
 	{
@@ -97,6 +101,12 @@ export default function cartReducer(state = initialState, action) {
 						return { ...item, count: action.payload.newCount };
 					}
 					return item;
+				}),
+			];
+		case DELETE_CARD:
+			return [
+				...state.filter((item) => {
+					return item.id !== action.payload
 				}),
 			];
 

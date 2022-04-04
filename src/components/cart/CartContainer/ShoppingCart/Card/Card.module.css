@@ -70,26 +70,23 @@
 .action_links {
 	margin-top: 10px;
 	display: flex;
-}
-.action_link_select {
-
+	align-items: center;
 }
 .action_separator {
 	display: inline-block;
-	height: 100%;
+	height: 70%;
 	width: 1px;
 	margin: 0px 10px;
 	background-color: #DDDDDD;
 }
 .action_link_delete {
-	/* border-left: 1px solid #DDDDDD; */
+	font-size: 14px;
 	color: #007185;
 }
 .action_link_delete:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
-
 .card_price {
 	width: 100px;
 	flex-shrink: 0;

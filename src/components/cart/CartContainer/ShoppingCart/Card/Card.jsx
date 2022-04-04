@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
-import Select from 'react-select';
 import {
+	deleteCardAction,
 	toogleChoiseAction,
-	changeCountAction,
 } from '../../../../../redux-store/actions/cartActions';
 import s from './Card.module.css';
-
-const options = [
-	{ value: '1', label: '1' },
-	{ value: '2', label: '2' },
-	{ value: '3', label: '3' },
-	{ value: '4', label: '4' },
-	{ value: '5', label: '5' },
-];
+import SelectQuantity from './SelectQuantity/SelectQuantity';
 
 export default function Card({
 	data: {
@@ -30,21 +22,14 @@ export default function Card({
 	},
 }) {
 	const arrDescr = [];
-
-	const [selectedOption, setSelectedOption] = useState(count);
-	const dispatch = useDispatch();
-
-	const defaultValueSelect = options.filter(
-		(option) => +option.value === count
-	);
-
 	for (const [key, value] of Object.entries(description)) {
 		arrDescr.push(`${key} ${value}`);
 	}
 
+	const dispatch = useDispatch();
+
 	const toggleChoise = (cardId) => dispatch(toogleChoiseAction(cardId));
-	const changeCount = (id, count) =>
-		dispatch(changeCountAction({ id: id, newCount: count }));
+	const deleteCard = (cardId) => dispatch(deleteCardAction(cardId));
 
 	return (
 		<div className={s.card_wrapper}>
@@ -76,16 +61,11 @@ export default function Card({
 					})}
 				</div>
 				<div className={s.action_links}>
-					<Select
-						defaultValue={defaultValueSelect}
-						onChange={(event) => {
-							changeCount(id, event.value);
-							setSelectedOption(event);
-						}}
-						options={options}
-					/>
+					<SelectQuantity id={id} count={count} />
 					<span className={s.action_separator}></span>
-					<span className={s.action_link_delete}>Delete</span>
+					<span className={s.action_link_delete} onClick={() => deleteCard(id)}>
+						{'Delete'}
+					</span>
 				</div>
 			</div>
 			<div className={s.card_price}>
