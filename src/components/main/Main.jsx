@@ -8,7 +8,7 @@ const Main = () => {
 	return (
 		<div className={s.wrapper}>
 			<Routes>
-				<Route exact path="/products" element={<ProductListing />} />
+				<Route path="/products" element={<ProductListing />} />
 				<Route path="/cart" element={<CartContainer />} />
 			</Routes>
 		</div>
