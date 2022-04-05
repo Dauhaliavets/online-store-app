@@ -1,10 +1,10 @@
 import React from 'react';
-import s from './Form.module.css';
+import s from './Search.module.css';
 import Select from './Select';
 import Input from './Input';
 import Button from './Button';
 
-const Form = () => {
+const Search = () => {
 	return (
 		<div className={s.wrapper}>
 			<Select />
@@ -14,4 +14,4 @@ const Form = () => {
 	)
 }
 
-export default Form;
+export default Search;
