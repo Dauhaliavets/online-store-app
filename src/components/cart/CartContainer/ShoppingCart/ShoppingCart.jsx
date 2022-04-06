@@ -1,28 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import getItemCount from '../../../../js/getItemCount';
+import getTotalPrice from '../../../../js/getTotalPrice';
 import SubTotal from '../SubTotal/SubTotal';
 import Card from './Card/Card';
-import Preloader from './Preloader/Preloader';
 import s from './ShoppingCart.module.css';
 
 export default function ShoppingCart() {
 	const cart = useSelector(state => state.cart);
-
-	const totalPrice = cart.reduce((acc, cur) => {
-		if (cur.isChoise) {
-			acc = acc + (+cur.price * +cur.count)
-			return +(acc.toFixed(2))
-		}
-		return acc;
-	}, 0);
-
-	const countItems = cart.reduce((acc, cur) => {
-		if (cur.isChoise) {
-			acc = acc + +cur.count
-			return +(acc.toFixed(2))
-		}
-		return acc;
-	}, 0);
+	const totalPrice = getTotalPrice(cart);
+	const countItems = getItemCount(cart);
 
 	return (
 		<div className={s.wrapper}>
