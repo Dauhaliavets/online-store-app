@@ -1,30 +1,44 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import s from "./FilterSideBar.module.css"
-import arrow from "../../../../assets/icons/arrow.svg"
+import Filter from "./filter/Filter";
+import { useDispatch, useSelector } from "react-redux";
+import { setFilter } from "../../../../redux-store/actions/productsActions";
 
 function FilterSideBar() {
-  const [isActive, setIsActive] = useState(false)
-  const [filter, setFilter] = useState({})
-  useEffect(() => {
-    console.log(filter)
-  }, [filter])
+  const dispatch = useDispatch()
+  const filter = useSelector(state => state.products.filter)
+  const brands = new Set(useSelector(state => state.products.visible).map(product => product.brand))
+  console.log(brands);
 
   return (
     <div className={s.wrapper}>
       <h4>You can filter by:</h4>
-      <div className={s.filter}>
-        <span className={isActive ? `${s.filter_header} ${s.active}` : s.filter_header}
-        onClick={() => { setIsActive(!isActive) }}>
-          Price
-          <img className={s.arrow}
-          src={arrow} 
-          alt="arrow" />
-        </span>
-        <div className={isActive ? `${s.filter_body} ${s.active}` : s.filter_body}>
-          <p>From</p> <input type="text" placeholder="From" />
-          <p>To</p> <input type="text" placeholder="To" />
-        </div>
-      </div>
+      <Filter header={'Price'}>
+        <p>Min price</p>
+
+        <input type="text" 
+        value={filter.priceMin ? filter.priceMin : ""} 
+        className={s.input}
+        onChange={
+          (e) => {
+            dispatch(setFilter({ priceMin: +e.target.value }))
+          }
+        }/>
+
+        <p>Max Price</p>
+
+        <input type="text" 
+        value={filter.priceMax ? filter.priceMax : ""} 
+        className={s.input}
+        onChange={
+          (e) => {
+            dispatch(setFilter({ priceMax: +e.target.value }))
+          }
+        }/>
+      </Filter>
+      <Filter header={'Brands'}>
+        brands
+      </Filter>
     </div>
   );
 }
