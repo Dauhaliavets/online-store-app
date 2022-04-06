@@ -1,8 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react'
 import s from './TopBar.module.css';
 import arrow from '../../../../assets/icons/chevron-down 1.png'
+import { useDispatch, useSelector } from 'react-redux';
+import { setSort } from '../../../../redux-store/actions/productsActions';
 
-function ResultAndSort({ sort, setSort, OPTIONS}) {
+function ResultAndSort() {
+	const dispatch = useDispatch()
+	const OPTIONS = ["Feature", "Price Min", "Price Max", "By Discount"]
+	const sort = useSelector(state => state.products.sort)
 	const [isActive, setIsActive] = useState(false)
 	const selectEl = useRef(null)
 
@@ -11,7 +16,7 @@ function ResultAndSort({ sort, setSort, OPTIONS}) {
 			<div className={s.option}
 				key={option}
 				onClick={(e) => {
-					setSort(e.target.textContent)
+					dispatch(setSort(e.target.textContent))
 					setIsActive(false)
 				}}>
 				{option}

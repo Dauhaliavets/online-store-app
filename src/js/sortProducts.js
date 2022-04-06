@@ -1,7 +1,13 @@
 export default function sortProducts(sort, products) {
+	if (!Array.isArray(products)) return []
   switch(sort) {
 		case "Feature":
-			return [...products].reverse()
+			return [...products].sort((prev, next) => {
+				if (prev.id < next.id) return 1
+				if (prev.id === next.id) return 0
+				if (prev.id > next.id) return -1
+        return null
+			})
 		case "Price Min":
 			return [...products].sort((prev, next) => {
 				if (prev.price > next.price) return 1

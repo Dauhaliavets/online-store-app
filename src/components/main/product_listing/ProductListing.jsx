@@ -1,34 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import { ENDPOINTS, getDataFromServer } from '../../../api/server';
-import sortProducts from '../../../js/sortProducts';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchProducts } from '../../../redux-store/thunk/asyncActions';
 import FilterSideBar from './filterSideBar/FilterSideBar';
 import s from './ProductListing.module.css';
 import Products from './products/Products';
 import TopBar from './topBar/TopBar';
 
 function ProductListing() {
-	const OPTIONS = ["Feature", "Price Min", "Price Max", "By Discount"]
-	const [sort, setSort] = useState(OPTIONS[0])
-	const [products, setProducts] = useState(null)
-
+	const dispatch = useDispatch()
 
 	useEffect(() => {
-		getDataFromServer(ENDPOINTS.PRODUCTS)
-			.then(data => {
-				setProducts(data)
-			})
-	}, [])
+		dispatch(fetchProducts())
+	})
 
-	let sortedProducts = products ? sortProducts(sort, products) : []
 
 	return (
 		<div className={s.product_listing}>
-			<TopBar sort={sort}
-				setSort={setSort}
-				OPTIONS={OPTIONS} />
+			<TopBar />
 			<div className={s.main}>
 				<FilterSideBar />
-				<Products products={sortedProducts} />
+				<Products />
 			</div>
 		</div>
 	);
