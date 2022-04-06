@@ -9,10 +9,6 @@ function FilterSideBar() {
     console.log(filter)
   }, [filter])
 
-  function priceMinChangeHandler(event) {
-    setFilter(Object.assign())
-  }
-
   return (
     <div className={s.wrapper}>
       <h4>You can filter by:</h4>
