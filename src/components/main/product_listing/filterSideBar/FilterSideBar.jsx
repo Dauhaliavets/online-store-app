@@ -7,8 +7,24 @@ import { setFilter } from "../../../../redux-store/actions/productsActions";
 function FilterSideBar() {
   const dispatch = useDispatch()
   const filter = useSelector(state => state.products.filter)
-  const brands = new Set(useSelector(state => state.products.visible).map(product => product.brand))
-  console.log(brands);
+  let brands = [...new Set(useSelector(state => state.products.all).map(product => product.brand))]
+  brands = brands.map(brand => {
+    const isChecked = Array.isArray(filter.brands) && filter.brands.includes(brand)
+
+    return <div className={`${s.brand} ${ isChecked ? s.active : ""}`}
+    key={brand}
+    onClick={() => {
+      if (isChecked) {
+        dispatch(setFilter({ brands: [...filter.brands.filter(el => el !== brand)] }))
+        return
+      } 
+      dispatch(setFilter({ brands: [...filter.brands, brand] }))
+    }}>
+      <div className={s.brand_check}></div>
+      <div className={s.brand_name}>{brand}</div>
+    </div>
+  })
+
 
   return (
     <div className={s.wrapper}>
@@ -37,7 +53,7 @@ function FilterSideBar() {
         }/>
       </Filter>
       <Filter header={'Brands'}>
-        brands
+        {brands}
       </Filter>
     </div>
   );

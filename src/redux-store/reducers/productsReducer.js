@@ -9,8 +9,8 @@ const initialState = {
   sort: "Feature",
   filter: {
     priceMin: 0,
-    priceMax: null,
-    brands: null,
+    priceMax: 0,
+    brands: [],
     category: ''
   }
 }
