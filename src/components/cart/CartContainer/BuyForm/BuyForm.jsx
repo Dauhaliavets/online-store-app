@@ -1,26 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import getItemCount from '../../../../js/getItemCount.js';
+import getTotalCount from '../../../../js/getTotalPrice.js';
 import SubTotal from '../SubTotal/SubTotal';
 import s from './BuyForm.module.css';
 
 export default function BuyBox() {
 	const cart = useSelector((state) => state.cart);
-
-	const totalPrice = cart.reduce((acc, cur) => {
-		if (cur.isChoise) {
-			acc = acc + (+cur.price * +cur.count)
-			return +acc.toFixed(2);
-		}
-		return acc;
-	}, 0);
-
-	const countItems = cart.reduce((acc, cur) => {
-		if (cur.isChoise) {
-			acc = acc + +cur.count
-			return +(acc.toFixed(2))
-		}
-		return acc;
-	}, 0);
+	const totalPrice = getTotalCount(cart);
+	const countItems = getItemCount(cart);
 
 	return (
 		<div className={s.wrapper}>
