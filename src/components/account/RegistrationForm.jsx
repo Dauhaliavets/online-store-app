@@ -1,17 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { setDoc, doc } from 'firebase/firestore';
-import { db } from '../../firebase/firebase.js';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo-dark.png';
 import s from './RegistrationForm.module.css';
+import { useReg } from '../../hooks/useReg';
 
 const RegistrationForm = () => {
-	const dispatch = useDispatch();
-	const navigate = useNavigate();
-
 	const {
 		register,
 		formState: {
@@ -23,31 +17,7 @@ const RegistrationForm = () => {
 		watch
 	} = useForm({ mode: "onBlur" });
 
-	function handleRegistration(name, email, password) {
-		const auth = getAuth();
-		createUserWithEmailAndPassword(auth, email, password)
-			.then(({ user }) => {
-				if (user) {
-					dispatch({
-						type: 'ADD_USER', payload: {
-							name: name,
-							email: email,
-							password: password,
-							id: user.uid,
-							token: user.accessToken,
-						}
-					})
-					setDoc(doc(db, "users", user.uid), {
-						name: name,
-						email: email,
-						password: password,
-						id: user.uid,
-						token: user.accessToken,
-					});
-					return navigate('/')
-				}
-			})
-	}
+	const { handleRegistration } = useReg();
 
 	return (
 		<div className={s.wrapper}>

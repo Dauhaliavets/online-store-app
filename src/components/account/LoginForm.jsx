@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { doc, getDoc } from 'firebase/firestore';
-import { db } from '../../firebase/firebase.js';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { Link } from 'react-router-dom';
 import Warning from './Warning';
 import logo from '../../assets/images/logo-dark.png';
 import s from './LoginForm.module.css';
+import { useAuth } from '../../hooks/useAuth';
 
 const LoginForm = () => {
-	const dispatch = useDispatch();
-	const navigate = useNavigate();
-
-	const [loginError, setLoginError] = useState(false);
-
 	const {
 		register,
 		formState: {
@@ -26,29 +18,7 @@ const LoginForm = () => {
 		watch
 	} = useForm({ mode: "onBlur" });
 
-	function handleLogin(email, password) {
-		const auth = getAuth();
-		signInWithEmailAndPassword(auth, email, password)
-			.then(({ user }) => {
-				getDoc(doc(db, "users", user.uid))
-					.then(response => {
-						const userID = response._document.data.value.mapValue.fields;
-						if (userID) {
-							dispatch({
-								type: 'ADD_USER', payload: {
-									name: userID.name.stringValue,
-									email: userID.email.stringValue,
-									password: userID.password.stringValue,
-									id: userID.id.stringValue,
-									token: userID.token.stringValue,
-								}
-							})
-							return navigate('/')
-						}
-					})
-			})
-			.catch(() => setLoginError(true));
-	}
+	const { loginError, handleLogin } = useAuth();
 
 	return (
 		<div className={s.wrapper}>
