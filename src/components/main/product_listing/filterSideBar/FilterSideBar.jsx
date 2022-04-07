@@ -30,7 +30,7 @@ function FilterSideBar() {
     <div className={s.wrapper}>
       <h4>You can filter by:</h4>
       <Filter header={'Price'}>
-        <p>Min price</p>
+        <p className={s.price_header}>Min price</p>
 
         <input type="text" 
         value={filter.priceMin ? filter.priceMin : ""} 
@@ -41,7 +41,7 @@ function FilterSideBar() {
           }
         }/>
 
-        <p>Max Price</p>
+        <p className={s.price_header}>Max Price</p>
 
         <input type="text" 
         value={filter.priceMax ? filter.priceMax : ""} 
