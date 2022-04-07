@@ -10,13 +10,6 @@ import { db } from '../../../firebase/firebase.js';
 import { uploadDatabase } from '../../../firebase/uploadDatabase.js';
 
 function ProductListing() {
-	const dispatch = useDispatch()
-
-	useEffect(() => {
-		dispatch(fetchProducts())
-	})
-
-
 	return (
 		<div className={s.product_listing}>
 			<TopBar />
