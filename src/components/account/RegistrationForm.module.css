@@ -11,16 +11,6 @@
 	padding-top: 20px;
 }
 
-.wrapper__off {
-	display: none;
-}
-
-.logo {
-	width: 100px;
-	height: 30px;
-	margin-bottom: 15px;
-}
-
 .form {
 	display: flex;
 	flex-direction: column;
@@ -30,6 +20,7 @@
 	padding: 14px 18px;
 	border: 1px #ddd solid;
 	border-radius: 4px;
+	margin-top: 15px;
 }
 
 .title {
