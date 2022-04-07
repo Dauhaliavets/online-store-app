@@ -16,16 +16,18 @@ function filterProducts(filter, products) {
       if (filter.brands.includes(product.brand)) {
         return product
       }
+      return null
     })
     filteredProducts = filteredProducts.filter(product => product)
   }
 
+// TODO: make filter by category
   if (filter.category) {
     filteredProducts = filteredProducts.map(product => {
-      console.log(product.category === filter.category, product);
       if (product.category === filter.category) {
         return product
       }
+      return null
     })
   }
 
