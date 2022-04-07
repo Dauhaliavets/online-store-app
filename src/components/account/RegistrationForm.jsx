@@ -1,10 +1,17 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { NavLink } from 'react-router-dom';
-import s from './RegistrationForm.module.css';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setDoc, doc } from 'firebase/firestore';
+import { db } from '../../firebase/firebase.js';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import logo from '../../assets/images/logo-dark.png';
+import s from './RegistrationForm.module.css';
 
 const RegistrationForm = () => {
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+
 	const {
 		register,
 		formState: {
@@ -16,15 +23,35 @@ const RegistrationForm = () => {
 		watch
 	} = useForm({ mode: "onBlur" });
 
+	function handleRegistration(name, email, password) {
+		const auth = getAuth();
+		createUserWithEmailAndPassword(auth, email, password)
+			.then(({ user }) => {
+				if (user) {
+					dispatch({
+						type: 'ADD_USER', payload: {
+							name: name,
+							email: email,
+							password: password,
+							id: user.uid,
+							token: user.accessToken,
+						}
+					})
+					setDoc(doc(db, "users", user.uid), {
+						name: name,
+						email: email,
+						password: password,
+						id: user.uid,
+						token: user.accessToken,
+					});
+					return navigate('/')
+				}
+			})
+	}
+
 	return (
 		<div className={s.wrapper}>
-			<NavLink to='/' className={s.logo}>
-				<img
-					className={s.logo}
-					src={logo}
-					alt="logo"
-				/>
-			</NavLink>
+			<Link to='/'><img src={logo} alt="logo" /></Link>
 			<form className={s.form} onSubmit={handleSubmit(() => reset())}>
 				<h2 className={s.title}>Create account</h2>
 				<div className={s.field}>
@@ -38,8 +65,8 @@ const RegistrationForm = () => {
 								message: 'Minimum 6 characters required'
 							},
 							maxLength: {
-								value: 20,
-								message: 'Maximum 20 characters'
+								value: 13,
+								message: 'Maximum 13 characters'
 							}
 						})}
 					/>
@@ -100,8 +127,8 @@ const RegistrationForm = () => {
 					/>
 					<p className={s.warning}>{errors?.password_repeat?.message}</p>
 				</div>
-				<input className={s.button} type="submit" disabled={!isValid} value='Continue' />
-				<p className={s.text}>Already have an account? <NavLink to='/authorization' className={s.link}>Start here</NavLink></p>
+				<input className={s.button} type="submit" disabled={!isValid} value='Continue' onClick={() => handleRegistration(watch("name"), watch("email"), watch("password"))} />
+				<p className={s.text}>Already have an account? <Link to='/authorization' className={s.link}>Sign in</Link></p>
 			</form>
 		</div>
 	)
