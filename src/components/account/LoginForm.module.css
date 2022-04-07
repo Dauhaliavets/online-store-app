@@ -11,12 +11,6 @@
 	padding-top: 20px;
 }
 
-.logo {
-	width: 100px;
-	height: 30px;
-	margin-bottom: 15px;
-}
-
 .form {
 	display: flex;
 	flex-direction: column;
@@ -26,7 +20,7 @@
 	padding: 14px 18px;
 	border: 1px #ddd solid;
 	border-radius: 4px;
-	margin-bottom: 25px;
+	margin: 15px 0 25px;
 }
 
 .title {
@@ -121,6 +115,9 @@
 }
 
 .button_grey {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 350px;
 	height: 30px;
 	border-radius: 3px;
@@ -128,8 +125,6 @@
 	background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
 	font-size: 12px;
 	color: #111;
-	outline: none;
-	cursor: pointer;
 }
 
 .button_grey:hover {
