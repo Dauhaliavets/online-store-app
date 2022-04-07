@@ -1,0 +1,25 @@
+.count_changer {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(194, 194, 194);
+  transition: all 0.05s ease-in;
+}
+
+.btn:hover {
+  background-color: rgb(173, 173, 173);
+}
+
+.btn:active {
+  background-color: rgb(118, 118, 118);
+}

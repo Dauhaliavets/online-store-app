@@ -2,6 +2,7 @@ import {
 	TOGGLE_CHOISE,
 	CHANGE_COUNT,
 	DELETE_CARD,
+	CART_ADD_PRODUCT
 } from '../actions/cartActions';
 
 const initialState = [
@@ -109,6 +110,13 @@ export default function cartReducer(state = initialState, action) {
 					return item.id !== action.payload
 				}),
 			];
+		case CART_ADD_PRODUCT:
+			state.forEach(product => {
+				if (product.id === action.payload.id){
+					action.payload.count += product.count
+				}
+			})
+			return [...state.filter(product => product.id !== action.payload.id), action.payload]
 
 		default:
 			return state;

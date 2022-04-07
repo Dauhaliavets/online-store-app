@@ -1,11 +1,23 @@
 import React, { useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { cartAddProduct, deleteCardAction } from "../../../../../redux-store/actions/cartActions";
+import { CountChanger } from "./countChanger/CountChanger";
 import s from "./Product.module.css";
 
 function Product({ product }) {
   const [isDescriptionOpen, setDescriptionOpen] = useState(false)
   const descriptionToggler = useRef("")
+  const dispatch = useDispatch()
+  const cart = useSelector(state => state.cart)
+  let isInCart = false
 
   if (!product) return "Not found"
+
+  cart.forEach(cartProduct => {
+    if (cartProduct.id === product.id) {
+      isInCart = true
+    }
+  })
 
   const { 
     brand, 
@@ -23,6 +35,16 @@ function Product({ product }) {
     return <div className={isDescriptionOpen? `${s.description_field} ${s.active}` : s.description_field} 
     key={key}>{key}{value}</div>
   })
+
+  function cartAddHandler() {
+    const addedProduct = Object.assign({}, product, {isChoise: true, count: 1})
+    dispatch(cartAddProduct(addedProduct))
+  }
+
+  function cartRemoveHandler() {
+    console.log(product, cart);
+    dispatch(deleteCardAction(product.id))
+  }
 
   return (
     <div className={s.wrapper}>
@@ -48,7 +70,14 @@ function Product({ product }) {
           <span ref={descriptionToggler}>{isDescriptionOpen ? "Close " : "Open "}description </span>
           <div className={isDescriptionOpen ? `${s.arrow} ${s.active}` : s.arrow}></div> {productDescription}
         </div>
-        <button className={s.cart_btn}>Add to cart <div className={s.cart}></div></button>
+        <div className={s.btns_wrapper}>
+          {isInCart && <CountChanger product={product} cart={cart} />}
+          <button className={isInCart ? `${s.cart_btn} ${s.remove}` : s.cart_btn}
+          onClick={isInCart ? cartRemoveHandler : cartAddHandler}>
+            {isInCart ? "Remove" : "Add to cart"} 
+            <div className={s.cart}></div>
+          </button>
+        </div>
         <div className={s.article}>Article: {id}</div>
       </div>
     </div>

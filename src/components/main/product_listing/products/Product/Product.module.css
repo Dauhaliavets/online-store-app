@@ -76,7 +76,6 @@
 }
 
 .cart_btn {
-  margin-top: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -89,6 +88,18 @@
   color: white;
   font-size: 16px;
   transition: 0.05s ease-in;
+}
+
+.cart_btn.remove {
+  background-color: #B12704;
+}
+
+.cart_btn.remove:hover {
+  background-color: #992103;
+}
+
+.cart_btn.remove:active {
+  background-color: #751801;
 }
 
 .cart_btn:hover {
@@ -146,4 +157,11 @@
   height: auto;
   margin-left: 20px;
   transition: 0.3s ease-out; 
+}
+
+.btns_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: -10px;
 }
