@@ -1,0 +1,382 @@
+[
+	{
+			"id": 0,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": " Моноблок Dell (Intel Pentium N3700 (1.6 ГГц), RAM 4 ГБ, HDD 1000, Intel HD Graphics, ",
+			"description": {
+					"Процессор: ": "Intel Pentium N3700 (1.6 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Видеокарта: ": "Intel HD Graphics",
+					"Технология матрицы: ": "TN"
+			},
+			"price": 1646.54,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-p/wc250/6285931033.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Dell (Intel Core i5-10505 (3.2 ГГц), RAM 8 ГБ, Intel UHD Graphics 630, ",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-10505 (3.2 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Видеокарта: ": "Intel UHD Graphics 630",
+					"Размеры, мм: ": "540.2x344x52.8"
+			},
+			"price": 7070.67,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-2/wc250/6260594498.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Dell (Intel Core i7-10700 (2.9 ГГц), SSD 512, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i7-10700 (2.9 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 12036.23,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-5/wc250/6287408993.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Dell (Intel Core i5-10500T (2.3 ГГц), RAM 8 ГБ, SSD 256, Intel UHD Graphics 630, Windows)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-10500T (2.3 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 6952.77,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-v/wc250/6257639791.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": " Моноблок Dell (Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, HDD 256, Intel UHD Graphics, ",
+			"description": {
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Общий объем HDD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics",
+					"Материал корпуса: ": "Пластик",
+					"Оптический привод: ": "Отсутствует"
+			},
+			"price": 4073.35,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6222622124.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Dell (Intel Core i7-10700 (2.9 ГГц), RAM 16 ГБ, SSD 256, HDD 1000, NVIDIA GeForce GTX 1650 (4 Гб), Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i7-10700 (2.9 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 12203.47,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-b/wc250/6133171211.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Dell (Intel Core i7-10700 (2.9 ГГц), RAM 16 ГБ, SSD 512, HDD 0, NVIDIA GeForce GTX 1650 (4 Гб), Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i7-10700 (2.9 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "512"
+			},
+			"price": 11964.56,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-5/wc250/6029686433.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Dell (Intel Core i5-10500T (2.3 ГГц), RAM 8 ГБ, SSD 256, HDD 1000, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-10500T (2.3 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 7544.86,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-2/wc250/6116593778.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 8,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Dell (Intel Core i7-10700 (2.9 ГГц), RAM 16 ГБ, SSD 512, Intel UHD Graphics 630, Linux)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i7-10700 (2.9 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 10137.14,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6278598210.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 9,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": " Моноблок Dell (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, HDD 512, NVIDIA GeForce MX330 (2 Гб), ",
+			"description": {
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Общий объем HDD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)",
+					"Материал корпуса: ": "Пластик",
+					"Оптический привод: ": "Отсутствует"
+			},
+			"price": 5281.51,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6222622124.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 10,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": " Моноблок Dell (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, HDD 512, NVIDIA GeForce MX330 (2 Гб), ",
+			"description": {
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Общий объем HDD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)",
+					"Материал корпуса: ": "Пластик",
+					"Оптический привод: ": "Отсутствует"
+			},
+			"price": 5611.26,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6222588080.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 11,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": " Моноблок Dell (Intel Core i7-1165G7 (2.8 ГГц), RAM 8 ГБ, HDD 256, NVIDIA GeForce MX330 (2 Гб), ",
+			"description": {
+					"Процессор: ": "Intel Core i7-1165G7 (2.8 ГГц)",
+					"Общий объем HDD, ГБ: ": "256",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)",
+					"Материал корпуса: ": "Пластик",
+					"Оптический привод: ": "Отсутствует"
+			},
+			"price": 6012,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6222588080.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 12,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Dell (Intel Core i7-10700 (2.9 ГГц), RAM 16 ГБ, SSD 512, HDD 1000, NVIDIA GeForce GTX 1650 (4 Гб), Linux)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i7-10700 (2.9 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "512"
+			},
+			"price": 11538.3,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-i/wc250/6238625910.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 13,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Dell (Intel Core i7-10700 (2.9 ГГц), RAM 16 ГБ, SSD 512, Intel UHD Graphics 630, Windows)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i7-10700 (2.9 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 11694.22,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-g/wc250/6151218664.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 14,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": " Моноблок Dell (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 256, HDD 1000, Intel Iris Xe Graphics, Windows 10 Pro)",
+			"description": {
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel Iris Xe Graphics"
+			},
+			"price": 6040.32,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-o/wc250/6237211728.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 15,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Dell (Intel Core i7-1165G7 (2.8 ГГц), RAM 16 ГБ, SSD 256, HDD 1024, Intel Iris Xe Graphics, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i7-1165G7 (2.8 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем HDD, ГБ: ": "1024",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 6656.91,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-y/wc250/6276228826.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 16,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23,8\" Моноблок Dell (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 512, NVIDIA GeForce MX330 (2 Гб), Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)"
+			},
+			"price": 5255.12,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-m/wc250/6126514282.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 17,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23,8\" Моноблок Dell (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 256, HDD 1000, NVIDIA GeForce MX330 (2 Гб), Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 5003.31,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-h/wc250/6288151757.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 18,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок Dell (Intel Core i3-10105T (3.0 ГГц), RAM 8 ГБ, SSD 256, Intel HD Graphics 630, Linux)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i3-10105T (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel HD Graphics 630"
+			},
+			"price": 4938.66,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-e/wc250/6161932010.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 19,
+			"brand": "Dell",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Dell (Intel Core i5-10505 (3.2 ГГц), RAM 8 ГБ, SSD 256, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-10505 (3.2 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 6385.97,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-h/wc250/6145613033.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

@@ -1,0 +1,78 @@
+[
+	{
+			"id": 0,
+			"brand": "Samsung",
+			"category": "TV",
+			"title": "4K UHD Телевизор Samsung UE43TU7090UXRU 43\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "43",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "3840×2160 4K UHD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 1969.15,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-0/wc250/6023147856.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Samsung",
+			"category": "TV",
+			"title": " Телевизор Samsung 50\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "50",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "3840×2160 4K UHD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 2608.13,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6271462964.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "Samsung",
+			"category": "TV",
+			"title": "4K UHD Телевизор Samsung UE43AU7540UXRU 43\"",
+			"description": {
+					"Тип: ": "Телевизор",
+					"Диагональ экрана, дюймы: ": "43",
+					"Разрешение: ": "3840×2160 4K UHD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Edge LED"
+			},
+			"price": 1969.15,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-c/wc250/6064893432.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "Samsung",
+			"category": "TV",
+			"title": "4K UHD Телевизор Samsung UE43AU8000UXRU 43\"",
+			"description": {
+					"Тип: ": "Телевизор",
+					"Диагональ экрана, дюймы: ": "43",
+					"Разрешение: ": "3840×2160 4K UHD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 2384.49,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6068304352.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

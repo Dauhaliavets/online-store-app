@@ -1,0 +1,382 @@
+[
+	{
+			"id": 0,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": " Моноблок HP (Intel Celeron G5905T (3.3 ГГц), RAM 4 ГБ, Intel HD Graphics 610, Windows 10 Pro)",
+			"description": {
+					"Процессор: ": "Intel Celeron G5905T (3.3 ГГц)",
+					"Видеокарта: ": "Intel HD Graphics 610",
+					"ОС (краткое название): ": "Windows 10 Pro",
+					"Технология матрицы: ": "IPS",
+					"Покрытие экрана: ": "Матовое"
+			},
+			"price": 1893.3,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-t/wc250/6286675985.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (AMD Ryzen 3 3250U (2.6 ГГц), RAM 4 ГБ, SSD 256, HDD 0, AMD Radeon Graphics, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "AMD Ryzen 3 3250U (2.6 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 3590.67,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-u/wc250/6021608598.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21,5\" Моноблок HP (AMD Athlon Silver 3050U (2.3 ГГц), RAM 4 ГБ, SSD 128, AMD Radeon Graphics, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "AMD Athlon Silver 3050U (2.3 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "AMD Radeon Graphics"
+			},
+			"price": 2800.03,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-j/wc250/6096135787.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок HP (Intel Core i5-9500 (3.0 ГГц), RAM 8 ГБ, SSD 256, HDD 500, ",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-9500 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем HDD, ГБ: ": "500",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 3352.32,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-5/wc250/6125277773.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок HP (AMD Ryzen 3 4300U (2.7 ГГц), RAM 16 ГБ, SSD 512, AMD Radeon Vega 5, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "AMD Ryzen 3 4300U (2.7 ГГц)",
+					"Оперативная память, ГБ: ": "16",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "AMD Radeon Vega 5"
+			},
+			"price": 4652.38,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6161070124.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": " Моноблок HP (Intel Core i5-9500T (2.2 ГГц), RAM 8 ГБ, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Процессор: ": "Intel Core i5-9500T (2.2 ГГц)",
+					"Видеокарта: ": "Intel UHD Graphics 630",
+					"ОС (краткое название): ": "Windows 10 Pro",
+					"Технология матрицы: ": "IPS",
+					"Оптический привод: ": "DVD-RW SuperMulti с поддержкой DualLayer"
+			},
+			"price": 4499.5,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-7/wc250/6287930527.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (Intel Celeron J4025 (2.0 ГГц), RAM 4 ГБ, SSD 0, HDD 1000, Intel UHD Graphics 600, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Celeron J4025 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "0"
+			},
+			"price": 2056.79,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-f/wc250/6018077739.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 512, Intel Iris Xe Graphics, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "Intel Iris Xe Graphics"
+			},
+			"price": 3615.17,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-l/wc250/6090254109.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 8,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21,5\" Моноблок HP (Intel Pentium Silver J5040 (2.0 ГГц), RAM 8 ГБ, SSD 256, HDD 0, Intel UHD Graphics 620, DOS)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Pentium Silver J5040 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 2662.53,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-d/wc250/6065264341.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 9,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (Intel Core i3-1125G4 (2.0 ГГц), RAM 4 ГБ, HDD 1000, NVIDIA GeForce MX330 (2 Гб), Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i3-1125G4 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)"
+			},
+			"price": 2445.11,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6274368932.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 10,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21,5\" Моноблок HP (Intel Core i5-10500 (3.1 ГГц), RAM 8 ГБ, SSD 256, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i5-10500 (3.1 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 5844.8,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-t/wc250/6286162445.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 11,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (Intel Core i3-10110U (2.1 ГГц), RAM 4 ГБ, SSD 0, HDD 1000, Intel UHD Graphics, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i3-10110U (2.1 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "0"
+			},
+			"price": 2958.27,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-p/wc250/6028160773.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 12,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (AMD Athlon Silver 3050U (2.3 ГГц), RAM 8 ГБ, SSD 256, AMD Radeon Graphics, ",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "AMD Athlon Silver 3050U (2.3 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "AMD Radeon Graphics"
+			},
+			"price": 3657.89,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-j/wc250/6283886695.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 13,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 256, Intel Iris Xe Graphics, Windows 11 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel Iris Xe Graphics"
+			},
+			"price": 3194.54,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-m/wc250/6265583686.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 14,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (Intel Core i3-1125G4 (2.0 ГГц), RAM 4 ГБ, SSD 256, HDD 0, Intel UHD Graphics, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i3-1125G4 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 2599.81,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-l/wc250/6090254109.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 15,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок HP (Intel Core i5-9500 (3.0 ГГц), RAM 8 ГБ, SSD 256, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-9500 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 5916.55,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-l/wc250/6004749249.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 16,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок HP (Intel Core i3-10100T (3.0 ГГц), RAM 8 ГБ, SSD 256, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i3-10100T (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 5173.08,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-h/wc250/6201785633.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 17,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "19,5\" Моноблок HP (Intel Core i5-10500T (2.3 ГГц), RAM 8 ГБ, HDD 1000, Intel UHD Graphics 630, Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "19.5",
+					"Процессор: ": "Intel Core i5-10500T (2.3 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Видеокарта: ": "Intel UHD Graphics 630"
+			},
+			"price": 5229.95,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6283916092.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 18,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок HP (AMD Ryzen 3 3250U (2.6 ГГц), RAM 4 ГБ, SSD 256, HDD 0, AMD Radeon Vega 3, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "AMD Ryzen 3 3250U (2.6 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 2520.8,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-f/wc250/6018077739.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 19,
+			"brand": "HP",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок HP (Intel Celeron J4025 (2.0 ГГц), RAM 4 ГБ, SSD 128, HDD 0, Intel UHD Graphics 600, Без системы)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Celeron J4025 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "128"
+			},
+			"price": 1924.42,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-2/wc250/6275346542.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

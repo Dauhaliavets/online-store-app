@@ -1,0 +1,382 @@
+[
+	{
+			"id": 0,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "14\" Ноутбук Lenovo IdeaPad 1 14IGL05, Intel Celeron N4020 (1.1 ГГц), RAM 4 ГБ, SSD 128 ГБ, Intel UHD Graphics 605, Windows Home, (81VU007XRU), серый",
+			"description": {
+					"Процессор: ": "Intel Celeron N4020 (1.1 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "Intel UHD Graphics 605",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1060.8,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-j/wc250/6127326511.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "17.3\" Ноутбук Lenovo IdeaPad 3 17ADA05, AMD Athlon Gold 3150U (2.4 ГГц), RAM 4 ГБ, SSD 128 ГБ, AMD Radeon Graphics, Windows Home, (81W20091RU), серый",
+			"description": {
+					"Процессор: ": "AMD Athlon Gold 3150U (2.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1426.48,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-i/wc250/6155684538.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "11.6\" Ноутбук Lenovo IdeaPad 1 11ADA05, AMD Athlon Silver 3050e (1.4 ГГц), RAM 4 ГБ, SSD 128 ГБ, AMD Radeon Graphics, Windows Home, (82GV003VRU), серый",
+			"description": {
+					"Процессор: ": "AMD Athlon Silver 3050e (1.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 909.1,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-3/wc250/6154651179.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "14\" Ноутбук Lenovo IdeaPad 3 14ITL6, Intel Pentium Gold 7505 (2.0 ГГц), RAM 8 ГБ, SSD 256 ГБ, Intel UHD Graphics, Без системы, (82H7009QRK), серый",
+			"description": {
+					"Процессор: ": "Intel Pentium Gold 7505 (2.0 ГГц)",
+					"Оперативная память: ": "8 ГБ",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics",
+					"Операционная система: ": "Без системы"
+			},
+			"price": 1449.04,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-f/wc250/6074115303.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "17.3\" Ноутбук Lenovo IdeaPad 3 17ITL6, Intel Celeron 6305 (1.8 ГГц), RAM 4 ГБ, SSD 128 ГБ, Intel UHD Graphics, Windows Home, (82H9008YRU), Серый",
+			"description": {
+					"Процессор: ": "Intel Celeron 6305 (1.8 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "Intel UHD Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1380.33,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-c/wc250/6156161388.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "17.3\" Ноутбук Lenovo IdeaPad 3 17ITL6, Intel Pentium Gold 7505 (2.0 ГГц), RAM 4 ГБ, SSD 128 ГБ, Intel UHD Graphics, Windows Home, (82H90090RU), Серый",
+			"description": {
+					"Процессор: ": "Intel Pentium Gold 7505 (2.0 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "Intel UHD Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1515.46,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-n/wc250/6156161147.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "15.6\" Игровой ноутбук Lenovo Legion 5 15IMH6, Intel Core i5-10500H (2.5 ГГц), RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 3050 для ноутбуков (4 Гб), Windows Home, (82NL0000RU), черный",
+			"description": {
+					"Процессор: ": "Intel Core i5-10500H (2.5 ГГц)",
+					"Оперативная память: ": "16 ГБ",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce RTX 3050 для ноутбуков (4 Гб)",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 4241.18,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-b/wc250/6140831327.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "15.6\" Ноутбук Lenovo V15-IGL, Intel Celeron N4020 (1.1 ГГц), RAM 4 ГБ, SSD 128 ГБ, Intel UHD Graphics 600, Без системы, (82C30027RU), серый",
+			"description": {
+					"Процессор: ": "Intel Celeron N4020 (1.1 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "Intel UHD Graphics 600",
+					"Операционная система: ": "Без системы"
+			},
+			"price": 1180.82,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-s/wc250/6149663692.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 8,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "11.6\" Ноутбук Lenovo IdeaPad 1 11ADA05, AMD Athlon Silver 3050e (1.4 ГГц), RAM 4 ГБ, SSD 128 ГБ, AMD Radeon Graphics, Windows Home, (82GV003WRU), синий",
+			"description": {
+					"Процессор: ": "AMD Athlon Silver 3050e (1.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1010.07,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6159725732.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 9,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "15.6\" Игровой ноутбук Lenovo Legion 5 15ACH6, AMD Ryzen 5 5600H (3.3 ГГц), RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 3050 Ti для ноутбуков (4 Гб), Windows Home, (82JW001SRU), темно-синий",
+			"description": {
+					"Процессор: ": "AMD Ryzen 5 5600H (3.3 ГГц)",
+					"Оперативная память: ": "16 ГБ",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce RTX 3050 Ti для ноутбуков (4 Гб)",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 4219.49,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-n/wc250/6077303003.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 10,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "15.6\" Ноутбук Lenovo V15 G2 15.6\" 1920x1080, Intel Core i3-1115G4 3GHz, 8Gb RAM, 256Gb SSD, WiFi, BT, Cam, W10Pro, серый (82KB0003RU), Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, SSD, Windows Pro",
+			"description": {
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память: ": "8 ГБ",
+					"Общий объем SSD, ГБ: ": "256",
+					"Операционная система: ": "Windows Pro",
+					"Диагональ экрана, дюймы: ": "15.6"
+			},
+			"price": 3592.53,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-n/wc250/6224558483.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 11,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "11.6\" Ноутбук Lenovo IdeaPad 1 11ADA05, AMD Athlon Silver 3050e (1.4 ГГц), RAM 4 ГБ, SSD 128 ГБ, AMD Radeon Graphics, Без системы, (82GV003URK), синий",
+			"description": {
+					"Процессор: ": "AMD Athlon Silver 3050e (1.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Без системы"
+			},
+			"price": 1065.61,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6159725732.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 12,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "15.6\" Игровой ноутбук Lenovo Legion 5 15ACH6, AMD Ryzen 5 5600H (3.3 ГГц), RAM 16 ГБ, SSD 512 ГБ, NVIDIA GeForce RTX 3050 Ti для ноутбуков (4 Гб), Windows Home, (82JW00CHRU), темно-синий",
+			"description": {
+					"Процессор: ": "AMD Ryzen 5 5600H (3.3 ГГц)",
+					"Оперативная память: ": "16 ГБ",
+					"Общий объем SSD, ГБ: ": "512",
+					"Общий объем HDD, ГБ: ": "0",
+					"Видеокарта: ": "NVIDIA GeForce RTX 3050 Ti для ноутбуков (4 Гб)"
+			},
+			"price": 4223.82,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6238896328.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 13,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "14\" Ноутбук Lenovo IdeaPad 1 14ADA05, AMD Athlon Silver 3050e (1.4 ГГц), RAM 4 ГБ, SSD 128 ГБ, AMD Radeon Graphics, Windows Home, (82GW0088RU), серый",
+			"description": {
+					"Процессор: ": "AMD Athlon Silver 3050e (1.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1228.51,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-d/wc250/6207681709.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 14,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "14\" Ноутбук Lenovo IdeaPad 3 14ITL05 (81X7007GRU), Intel Pentium Gold 7505 (2.0 ГГц), RAM 8 ГБ, SSD 128 ГБ, Intel UHD Graphics, Windows Home, (81X7007GRU), синий",
+			"description": {
+					"Процессор: ": "Intel Pentium Gold 7505 (2.0 ГГц)",
+					"Оперативная память: ": "8 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "Intel UHD Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1546.7,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-s/wc250/6153073324.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 15,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "14\" Ноутбук Lenovo IdeaPad 1 14ADA05, AMD Athlon Silver 3050e (1.4 ГГц), RAM 4 ГБ, SSD 128 ГБ, AMD Radeon Graphics, Windows Home, (82GW0089RU), синий",
+			"description": {
+					"Процессор: ": "AMD Athlon Silver 3050e (1.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "128",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Windows Home"
+			},
+			"price": 1134.99,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6155647662.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 16,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "15.6\" Ноутбук Lenovo IdeaPad 3, AMD Athlon Silver 3050U (2.3 ГГц), RAM 8 ГБ, SSD 256 ГБ, AMD Radeon Graphics, Без системы, (81W1019JRK)",
+			"description": {
+					"Процессор: ": "AMD Athlon Silver 3050U (2.3 ГГц)",
+					"Оперативная память: ": "8 ГБ",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Без системы"
+			},
+			"price": 1614.19,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-k/wc250/6065112860.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 17,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "17.3\" Ноутбук Lenovo IdeaPad 3 17ADA05, AMD Athlon Gold 3150U (2.4 ГГц), RAM 8 ГБ, SSD 256 ГБ, AMD Radeon Graphics, Без системы, (81W2008VRK), серый",
+			"description": {
+					"Процессор: ": "AMD Athlon Gold 3150U (2.4 ГГц)",
+					"Оперативная память: ": "8 ГБ",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Без системы"
+			},
+			"price": 1616.8,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-g/wc250/6155684572.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 18,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "15.6\" Ноутбук Lenovo IdeaPad 3 Gen 5, Intel Pentium Gold 6405U (2.4 ГГц), RAM 4 ГБ, HDD 1000 ГБ, NVIDIA GeForce MX130 (2 Гб), Без системы, (81WB00XKRK), серый",
+			"description": {
+					"Процессор: ": "Intel Pentium Gold 6405U (2.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Видеокарта: ": "NVIDIA GeForce MX130 (2 Гб)",
+					"Операционная система: ": "Без системы"
+			},
+			"price": 1182.92,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-g/wc250/6165956884.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 19,
+			"brand": "Lenovo",
+			"category": "Laptop",
+			"title": "14\" Ноутбук Lenovo V14 ADA 82C60059RU, AMD Athlon Gold 3150U (2.4 ГГц), RAM 4 ГБ, SSD 256 ГБ, AMD Radeon Graphics, Linux, (82C60059RU), серый",
+			"description": {
+					"Процессор: ": "AMD Athlon Gold 3150U (2.4 ГГц)",
+					"Оперативная память: ": "4 ГБ",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "AMD Radeon Graphics",
+					"Операционная система: ": "Linux"
+			},
+			"price": 3009.91,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-z/wc250/6128644235.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

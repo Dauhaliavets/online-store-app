@@ -1,0 +1,379 @@
+[
+	{
+			"id": 0,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "19,5\" Моноблок Acer (Intel Celeron J3060 (1.6 ГГц), RAM 4 ГБ, Intel HD Graphics, ",
+			"description": {
+					"Диагональ экрана, дюймы: ": "19.5",
+					"Процессор: ": "Intel Celeron J3060 (1.6 ГГц)",
+					"Видеокарта: ": "Intel HD Graphics",
+					"Тип памяти: ": "DDR3L",
+					"Тип видеокарты: ": "Встроенная"
+			},
+			"price": 1601.37,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-k/wc250/6286475672.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, SSD 256, NVIDIA GeForce MX330 (2 Гб), Windows 11 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)"
+			},
+			"price": 2721.57,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-9/wc250/6100505133.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "21,5\" Моноблок Acer (Intel Pentium Silver J5040 (2.0 ГГц), RAM 4 ГБ, SSD 256, Intel UHD Graphics 605, Без системы)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Pentium Silver J5040 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics 605"
+			},
+			"price": 2134.53,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6201210342.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок Acer (Intel Pentium Silver J5040 (2.0 ГГц), RAM 4 ГБ, SSD 256, HDD 0, Intel UHD Graphics 605, Без системы)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Pentium Silver J5040 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 1518.98,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-t/wc250/6191320985.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Acer (Intel Core i3-10100 (3.6 ГГц), RAM 8 ГБ, SSD 256, HDD 0, Intel UHD Graphics 630, Без системы)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i3-10100 (3.6 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем HDD, ГБ: ": "0",
+					"Общий объем SSD, ГБ: ": "256"
+			},
+			"price": 2362.28,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-t/wc250/6030687221.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Acer (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 512, Intel Iris Xe Graphics, ",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "Intel Iris Xe Graphics"
+			},
+			"price": 2920.8,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-k/wc250/6223916132.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), RAM 4 ГБ, SSD 1024, Intel UHD Graphics, Без системы)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем SSD, ГБ: ": "1024",
+					"Видеокарта: ": "Intel UHD Graphics"
+			},
+			"price": 2294,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-e/wc250/6151249334.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "23,8\" Моноблок Acer (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 256, Intel Iris Xe Graphics, FreeDOS)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel Iris Xe Graphics"
+			},
+			"price": 2602.1,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6129004820.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 8,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": " Моноблок Acer (Intel Core i3-8100 (3.6 ГГц), RAM 4 ГБ, ",
+			"description": {
+					"Процессор: ": "Intel Core i3-8100 (3.6 ГГц)",
+					"Технология матрицы: ": "IPS",
+					"Покрытие экрана: ": "Матовое",
+					"Оптический привод: ": "DVD-RW SuperMulti с поддержкой DualLayer",
+					"Тип памяти: ": "DDR4"
+			},
+			"price": 2050.68,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6273858260.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 9,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": " Моноблок Acer (Intel Core i5-1135G7 (2.4 ГГц), RAM 8 ГБ, SSD 512, Intel Iris Xe Graphics, ",
+			"description": {
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "Intel Iris Xe Graphics",
+					"Технология матрицы: ": "IPS"
+			},
+			"price": 2441.56,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-p/wc250/6192086269.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 10,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), SSD 256, NVIDIA GeForce MX330 (2 Гб), Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)"
+			},
+			"price": 4739.75,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-h/wc250/6194682005.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 11,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "23,8\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, SSD 256, Intel UHD Graphics, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "Intel UHD Graphics"
+			},
+			"price": 2494.81,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-z/wc250/6128657879.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 12,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "23.8\" Моноблок Acer (Intel Core i7-1165G7 (2.8 ГГц), RAM 8 ГБ, SSD 512, NVIDIA GeForce MX450 (2 ГБ), Без системы)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "23.8",
+					"Процессор: ": "Intel Core i7-1165G7 (2.8 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce MX450 (2 ГБ)"
+			},
+			"price": 4014.97,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6170311972.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 13,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "21.5\" Моноблок Acer (Intel Pentium Silver J5040 (2.0 ГГц), RAM 4 ГБ, SSD 0, HDD 1000, Intel UHD Graphics 605, Windows 10 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "21.5",
+					"Процессор: ": "Intel Pentium Silver J5040 (2.0 ГГц)",
+					"Оперативная память, ГБ: ": "4",
+					"Общий объем HDD, ГБ: ": "1000",
+					"Общий объем SSD, ГБ: ": "0"
+			},
+			"price": 2643.83,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6036514770.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 14,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, NVIDIA GeForce MX330 (2 Гб), Endless OS)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)",
+					"ОС (краткое название): ": "Endless OS"
+			},
+			"price": 4683.15,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-q/wc250/6251839214.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 15,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": " Моноблок Acer",
+			"description": {
+					"Цвет товара: ": "белый",
+					"Страна-изготовитель: ": "Китай"
+			},
+			"price": 2498.91,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6275217450.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 16,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, NVIDIA GeForce MX330 (2 Гб), Windows 11 Home)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)",
+					"ОС (краткое название): ": "Windows 11 Home"
+			},
+			"price": 3858.77,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-p/wc250/6251861677.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 17,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Acer (Intel Core i5-1135G7 (2.4 ГГц), RAM 16 ГБ, SSD 512, NVIDIA GeForce MX330 (2 Гб), Endless OS)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i5-1135G7 (2.4 ГГц)",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)",
+					"ОС (краткое название): ": "Endless OS"
+			},
+			"price": 5137.54,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-q/wc250/6251839214.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 18,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, SSD 256, NVIDIA GeForce MX330 (2 Гб), Windows 10 Pro)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Оперативная память, ГБ: ": "8",
+					"Общий объем SSD, ГБ: ": "256",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)"
+			},
+			"price": 3835.5,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-7/wc250/6100505131.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 19,
+			"brand": "Acer",
+			"category": "Monoblock",
+			"title": "27\" Моноблок Acer (Intel Core i3-1115G4 (3.0 ГГц), RAM 8 ГБ, SSD 512, NVIDIA GeForce MX330 (2 Гб), Endless OS)",
+			"description": {
+					"Диагональ экрана, дюймы: ": "27",
+					"Процессор: ": "Intel Core i3-1115G4 (3.0 ГГц)",
+					"Общий объем SSD, ГБ: ": "512",
+					"Видеокарта: ": "NVIDIA GeForce MX330 (2 Гб)",
+					"ОС (краткое название): ": "Endless OS"
+			},
+			"price": 3590.16,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-q/wc250/6251839214.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]
