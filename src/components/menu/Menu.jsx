@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import Burger from './Burger';
+import { Burger } from './Burger';
 import s from './Menu.module.css';
 import burger from '../../assets/icons/burger.svg';
 
@@ -26,4 +26,4 @@ const Menu = () => {
 	)
 }
 
-export default Menu;
+export { Menu };

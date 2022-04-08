@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import LoginWarning from '../Warnings/LoginWarning';
+import { LoginWarning } from '../Warnings/LoginWarning';
 import logo from '../../../assets/images/logo-dark.png';
 import s from './LoginForm.module.css';
 import { useAuth } from '../../../hooks/useAuth';
@@ -70,4 +70,4 @@ const LoginForm = () => {
 	)
 }
 
-export default LoginForm;
+export { LoginForm };

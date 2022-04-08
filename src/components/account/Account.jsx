@@ -31,4 +31,4 @@ const Account = () => {
 	)
 }
 
-export default Account;
+export { Account };
