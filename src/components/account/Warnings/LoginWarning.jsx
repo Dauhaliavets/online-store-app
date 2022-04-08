@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './Warning.module.css';
+import s from './LoginWarning.module.css';
 
-const Warning = () => {
+const LoginWarning = () => {
 	return (
 		<div className={s.wrapper}>
 			<div className={s.title}>There was a problem</div>
@@ -10,4 +10,4 @@ const Warning = () => {
 	)
 }
 
-export default Warning
+export default LoginWarning;

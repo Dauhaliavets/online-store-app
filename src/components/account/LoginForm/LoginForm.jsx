@@ -1,10 +1,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import Warning from './Warning';
-import logo from '../../assets/images/logo-dark.png';
+import LoginWarning from '../Warnings/LoginWarning';
+import logo from '../../../assets/images/logo-dark.png';
 import s from './LoginForm.module.css';
-import { useAuth } from '../../hooks/useAuth';
+import { useAuth } from '../../../hooks/useAuth';
 
 const LoginForm = () => {
 	const {
@@ -23,7 +23,7 @@ const LoginForm = () => {
 	return (
 		<div className={s.wrapper}>
 			<Link to='/'><img src={logo} alt="logo" /></Link>
-			{loginError ? <Warning /> : null}
+			{loginError ? <LoginWarning /> : null}
 			<form className={s.form} onSubmit={handleSubmit(() => reset())}>
 				<h2 className={s.title}>Sign-In</h2>
 				<div className={s.field}>
