@@ -1,9 +1,10 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo-dark.png';
+import RegistrationWarning from '../Warnings/RegistrationWarning';
+import logo from '../../../assets/images/logo-dark.png';
 import s from './RegistrationForm.module.css';
-import { useReg } from '../../hooks/useReg';
+import { useReg } from '../../../hooks/useReg';
 
 const RegistrationForm = () => {
 	const {
@@ -17,11 +18,12 @@ const RegistrationForm = () => {
 		watch
 	} = useForm({ mode: "onBlur" });
 
-	const { handleRegistration } = useReg();
+	const { registrationError, handleRegistration } = useReg();
 
 	return (
 		<div className={s.wrapper}>
 			<Link to='/'><img src={logo} alt="logo" /></Link>
+			{registrationError ? <RegistrationWarning /> : null}
 			<form className={s.form} onSubmit={handleSubmit(() => reset())}>
 				<h2 className={s.title}>Create account</h2>
 				<div className={s.field}>

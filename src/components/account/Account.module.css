@@ -95,6 +95,11 @@
 	border-color: #a88734 #9c7e31 #846a29;
 }
 
+.text {
+	font-size: 13px;
+}
+
 .link {
+	font-size: 13px;
 	color: #0055aa;
 }
