@@ -1,0 +1,382 @@
+[
+	{
+			"id": 0,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP Ink Tank 115",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Нагрузка в месяц, страниц: ": "1000"
+			},
+			"price": 698.35,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/multimedia/wc250/1025070427.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP DESKJET 2320 (7WN42B)",
+			"description": {
+					"Цветность печати: ": "Цветная",
+					"Тип: ": "Принтер",
+					"Интерфейсы: ": "USB 2.0",
+					"Совместимость: ": "Microsoft Windows",
+					"Гарантийный срок: ": "1 год"
+			},
+			"price": 325.21,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6090834594.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP Color Laser Jet 150nw",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Сетевые интерфейсы: ": "Ethernet, Wi-Fi",
+					"Автоматическая двусторонняя печать: ": "Нет"
+			},
+			"price": 1399.3,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-l/wc250/6064290441.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP МФУ DeskJet 2320",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Взаимодействие с устройствами: ": "Печать с E-mail, Печать с устройств Android/iOS, Прямая печать, Сканирование на E-Mail"
+			},
+			"price": 341.86,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-d/wc250/6233485645.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP Neverstop Laser 1000n",
+			"description": {
+					"Цветность печати: ": "Монохромная",
+					"Тип: ": "Принтер",
+					"Максимальный формат печати: ": "А4",
+					"Сетевые интерфейсы: ": "Ethernet",
+					"Облачные технологии: ": "Apple AirPrint"
+			},
+			"price": 844.84,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-l/wc250/6067366425.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP M211dw",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Максимальный формат печати: ": "А4",
+					"Сетевые интерфейсы: ": "Wi-Fi, Ethernet",
+					"Облачные технологии: ": "Apple AirPrint"
+			},
+			"price": 680.4,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-g/wc250/6243394504.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер HP Сканеp, Принтеp,Струйное МФУ DeskJet 2710",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"СНПЧ: ": "Нет"
+			},
+			"price": 511.58,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-6/wc250/6150791298.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP DESKJET 2320 (7WN42B).",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Количество цветов: ": "3"
+			},
+			"price": 325.21,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-v/wc250/6040857367.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 8,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP МФУ DeskJet 2320",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Взаимодействие с устройствами: ": "Печать с E-mail, Печать с устройств Android/iOS, Прямая печать, Сканирование на E-Mail"
+			},
+			"price": 409.82,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-d/wc250/6233485645.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 9,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP Laser 107wr",
+			"description": {
+					"Цветность печати: ": "Монохромная",
+					"Тип: ": "Принтер",
+					"Максимальный формат печати: ": "Нестандартный",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Нагрузка в месяц, страниц: ": "1500"
+			},
+			"price": 579.43,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-l/wc250/6031318365.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 10,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP OfficeJet Pro 9010",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Сетевые интерфейсы: ": "Ethernet, Wi-Fi",
+					"Автоматическая двусторонняя печать: ": "Да"
+			},
+			"price": 1606.46,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-5/wc250/6000053753.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 11,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP Ink Tank 115",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Нагрузка в месяц, страниц: ": "800"
+			},
+			"price": 1166.55,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-f/wc250/6058406595.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 12,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP LaserJet Pro M404dn",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Максимальный формат печати: ": "А4",
+					"Облачные технологии: ": "Apple AirPrint",
+					"Автоматическая двусторонняя печать: ": "Да"
+			},
+			"price": 1150.61,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-x/wc250/6000053853.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 13,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP Лазерный Laser 107w (4ZB78A)",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Гарантийный срок: ": "12"
+			},
+			"price": 749.51,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6107057348.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 14,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP 4ZB77A",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Нагрузка в месяц, страниц: ": "10000"
+			},
+			"price": 627.15,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-a/wc250/6025009210.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 15,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP лазерный LaserJet M211dw, A4, ч/б, 29стр/мин (A4 ч/б), 600x600 dpi, дуплекс, сетевой, Wi-Fi, USB (9YF83A)",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Да",
+					"Нагрузка в месяц, страниц: ": "20000"
+			},
+			"price": 846.97,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-z/wc250/6247917419.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 16,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP LaserJet 107a",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Цвет товара: ": "белый",
+					"Страна-изготовитель: ": "Китай"
+			},
+			"price": 681.19,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-x/wc250/6121016481.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 17,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP LaserJet Pro M203dn",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Максимальный формат печати: ": "А4",
+					"Сетевые интерфейсы: ": "Ethernet",
+					"Облачные технологии: ": "Apple AirPrint, Google Cloud Print"
+			},
+			"price": 904.05,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/multimedia/wc250/1025070443.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 18,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер струйный HP МФУ DeskJet 2320",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Цветная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Нет",
+					"Взаимодействие с устройствами: ": "Печать с E-mail, Печать с устройств Android/iOS, Прямая печать, Сканирование на E-Mail"
+			},
+			"price": 413.76,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-d/wc250/6233485645.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 19,
+			"brand": "HP",
+			"category": "Printer",
+			"title": "Принтер лазерный HP LaserJet Pro M404dn",
+			"description": {
+					"Тип: ": "Принтер",
+					"Цветность печати: ": "Монохромная",
+					"Максимальный формат печати: ": "А4",
+					"Автоматическая двусторонняя печать: ": "Да",
+					"Нагрузка в месяц, страниц: ": "80000"
+			},
+			"price": 1128.05,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-x/wc250/6000053853.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

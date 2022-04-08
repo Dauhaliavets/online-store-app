@@ -1,0 +1,382 @@
+[
+	{
+			"id": 0,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T10 LTE, 9.7\", 32GB, темно-синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "9.7",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS",
+					"Встроенная память,  ГБ: ": "32",
+					"Оперативная память: ": "2 ГБ"
+			},
+			"price": 552.84,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-z/wc250/6161379035.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI T8 KOB2-L09 синий (53011JUK), 8\", 16GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "8",
+					"Тип: ": "Планшет",
+					"Встроенная память,  ГБ: ": "16",
+					"Оперативная память: ": "2 ГБ",
+					"Разрешение экрана: ": "1280x800"
+			},
+			"price": 492.49,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-5/wc250/6152190545.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MATEPAD T10S Wi-Fi, 10.1\", 128GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.1",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Wi-Fi, Bluetooth",
+					"Встроенная память,  ГБ: ": "128",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 882.47,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-z/wc250/6158100695.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MATEPAD T Wi-Fi, 10.1\", 32GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.1",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Wi-Fi, Bluetooth",
+					"Встроенная память,  ГБ: ": "32",
+					"Оперативная память: ": "2 ГБ"
+			},
+			"price": 611.38,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6158100668.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Детский планшет HUAWEI MatePad T8 LTE Kids Edition, 8\", 16GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "8",
+					"Тип: ": "Детский планшет",
+					"Беспроводные интерфейсы: ": "Wi-Fi, Bluetooth, GPS",
+					"Встроенная память,  ГБ: ": "16",
+					"Оперативная память: ": "2 ГБ"
+			},
+			"price": 554.03,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-u/wc250/6085088766.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MATEPAD T10S LTE, 10.1\", 64GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.1",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Wi-Fi, Bluetooth",
+					"Встроенная память,  ГБ: ": "64",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 882.47,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-t/wc250/6158100473.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad Wi-Fi, 10.4\", 128GB, темно-серый",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.4",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Wi-Fi, GPS, Bluetooth",
+					"Встроенная память,  ГБ: ": "128",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 1263.38,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6044467060.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI 53011MYM, 10.4\", 128GB, темно-серый",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.4",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Wi-Fi, GPS, Bluetooth",
+					"Встроенная память,  ГБ: ": "128",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 1166.23,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6044467060.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 8,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad LTE (2022), 10.4\", 128GB, серый",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.4",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Bluetooth, Wi-Fi",
+					"Встроенная память,  ГБ: ": "128",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 1396.58,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-7/wc250/6260232055.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 9,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T10 4+64Gb LTE, синий",
+			"description": {
+					"Тип: ": "Планшет",
+					"Гарантийный срок: ": "12 месяцев",
+					"Партномер: ": "1365120",
+					"Название цвета: ": "blue",
+					"Цвет товара: ": "синий"
+			},
+			"price": 839.52,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-t/wc250/6258183641.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 10,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T 10 2/32Gb LTE Deepsea Blue 53012NJY (4G LTE), 9.7\", 32GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "9.7",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, Wi-Fi",
+					"Встроенная память,  ГБ: ": "32",
+					"Оперативная память: ": "2 ГБ"
+			},
+			"price": 591.26,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-9/wc250/6272235861.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 11,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T10s LTE, 10.1\", 128GB, синий",
+			"description": {
+					"Тип: ": "Планшет",
+					"Диагональ экрана, дюймы: ": "10.1",
+					"Беспроводные интерфейсы: ": "Wi-Fi, Bluetooth, GPS",
+					"Встроенная память,  ГБ: ": "128",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 981.04,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-i/wc250/6155038770.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 12,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T 10 2/32Gb WiFi Deepsea Blue 53012RDK, 9.7\", 32GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "9.7",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Bluetooth, Wi-Fi",
+					"Встроенная память,  ГБ: ": "32",
+					"Оперативная память: ": "2 ГБ"
+			},
+			"price": 532.09,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-9/wc250/6272235861.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 13,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad Wi-Fi (2022), 10.4\", 64GB, серый",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.4",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Bluetooth, Wi-Fi",
+					"Встроенная память,  ГБ: ": "64",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 1021.51,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-7/wc250/6260232055.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 14,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad 10.4 2022 LTE 4/128Gb Серый матовый 53012TDK (4G LTE), 10.4\", 128GB, серый",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.4",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "GPS, Wi-Fi, Bluetooth",
+					"Встроенная память,  ГБ: ": "128",
+					"Оперативная память: ": "4 ГБ"
+			},
+			"price": 1143.47,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-s/wc250/6274287772.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 15,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T10s LTE, 10.1\", 32GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.1",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Bluetooth, Wi-Fi",
+					"Встроенная память,  ГБ: ": "32",
+					"Оперативная память: ": "2 ГБ"
+			},
+			"price": 787.37,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-d/wc250/6032119681.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 16,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T10 AGRK-W09 2/32Gb Wi-Fi, 32GB, темно-синий",
+			"description": {
+					"Тип: ": "Планшет",
+					"Встроенная память,  ГБ: ": "32",
+					"Гарантийный срок: ": "официальная от Huawei по гарантийному талону",
+					"Партномер: ": "53012RDK",
+					"Цвет товара: ": "темно-синий"
+			},
+			"price": 523.81,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-3/wc250/6257491983.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 17,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T10s 4+128Gb WiFi, синий",
+			"description": {
+					"Тип: ": "Планшет",
+					"Гарантийный срок: ": "12 месяцев",
+					"Партномер: ": "1365121",
+					"Название цвета: ": "blue",
+					"Цвет товара: ": "синий"
+			},
+			"price": 994.89,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-m/wc250/6258185182.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 18,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad T 10, 9.69\", 32GB, синий",
+			"description": {
+					"Диагональ экрана, дюймы: ": "9.69",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Bluetooth, Wi-Fi",
+					"Встроенная память,  ГБ: ": "32",
+					"Оперативная память: ": "2 ГБ"
+			},
+			"price": 706.04,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6072202436.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 19,
+			"brand": "Huawei",
+			"category": "Tablet",
+			"title": " Планшет HUAWEI MatePad 11 Wi-Fi, 10.95\", 128GB, серый",
+			"description": {
+					"Диагональ экрана, дюймы: ": "10.95",
+					"Тип: ": "Планшет",
+					"Беспроводные интерфейсы: ": "Wi-Fi, Bluetooth, GPS",
+					"Встроенная память,  ГБ: ": "128",
+					"Оперативная память: ": "6 ГБ"
+			},
+			"price": 2130.55,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-3/wc250/6075750519.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

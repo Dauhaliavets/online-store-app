@@ -1,0 +1,382 @@
+[
+	{
+			"id": 0,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco 6/128GB, белый",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.67",
+					"Емкость аккумулятора, мАч: ": "4520",
+					"Процессор: ": "Snapdragon 870 (8 ядер), 3.2 ГГц",
+					"Основной материал корпуса: ": "Стекло"
+			},
+			"price": 1860.2,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6078067256.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M3 Pro 6/128GB, синий",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.53",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Процессор: ": "Dimensity 700 (8 ядер), 2.2 ГГц",
+					"Основной материал корпуса: ": "Пластик"
+			},
+			"price": 808.2,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-7/wc250/6067747435.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco X3 Pro 8/256GB, синий",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.67",
+					"Емкость аккумулятора, мАч: ": "5160",
+					"Процессор: ": "Snapdragon 860 (8 ядер), 2.96 ГГц",
+					"Основной материал корпуса: ": "Пластик"
+			},
+			"price": 1119.21,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-f/wc250/6057261471.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco F3 8/256GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.67",
+					"Емкость аккумулятора, мАч: ": "4520",
+					"Процессор: ": "Snapdragon 870 (8 ядер), 3.2 ГГц",
+					"Основной материал корпуса: ": "Стекло"
+			},
+			"price": 1307.12,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-e/wc250/6059122994.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 5G 4/128GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.6",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi, ИК-порт"
+			},
+			"price": 799.76,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-y/wc250/6179208034.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco F3 8/256GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.67",
+					"Емкость аккумулятора, мАч: ": "4520",
+					"Процессор: ": "Snapdragon 870 (8 ядер), 3.2 ГГц",
+					"Основной материал корпуса: ": "Стекло, Пластик"
+			},
+			"price": 1364.44,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-l/wc250/6224256477.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 4G 6/128GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.43",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi"
+			},
+			"price": 926.18,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-q/wc250/6265671926.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 PRO 5G 6/128GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.6",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, Wi-Fi, NFC, ИК-порт, GPS"
+			},
+			"price": 945.07,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-z/wc250/6214842167.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 8,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M3 Pro 5G 6/128GB, синий",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.53",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Процессор: ": "Dimensity 700 (8 ядер), 2.2 ГГц",
+					"Основной материал корпуса: ": "Пластик"
+			},
+			"price": 842.83,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-d/wc250/6067747477.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 9,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 5G 4/64GB, синий",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.6",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi, ИК-порт"
+			},
+			"price": 799.76,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-9/wc250/6179208081.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 10,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 4G 8/256GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.43",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi"
+			},
+			"price": 1103.63,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-b/wc250/6265671947.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 11,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 4G 8/256GB, синий",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.43",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi"
+			},
+			"price": 1103.63,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-u/wc250/6274237302.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 12,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco F3 6/128GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.67",
+					"Емкость аккумулятора, мАч: ": "4520",
+					"Процессор: ": "Snapdragon 870 (8 ядер), 3.2 ГГц",
+					"Основной материал корпуса: ": "Стекло"
+			},
+			"price": 1200.55,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-e/wc250/6059122994.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 13,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco X4 Pro 5G 8/256GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi, ИК-порт",
+					"Число ядер процессора: ": "8",
+					"Оперативная память: ": "8 ГБ"
+			},
+			"price": 1585.32,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-p/wc250/6270229525.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 14,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 2022 6/128GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Беспроводные интерфейсы: ": "NFC, Wi-Fi, Bluetooth, GPS, ИК-порт",
+					"Число ядер процессора: ": "8",
+					"Оперативная память: ": "6 ГБ"
+			},
+			"price": 926.14,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-9/wc250/6265196817.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 15,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 5G 4/64GB, желтый",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.6",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi, ИК-порт"
+			},
+			"price": 805.99,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-h/wc250/6179208197.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 16,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 2022 8/256GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi, ИК-порт",
+					"Число ядер процессора: ": "8",
+					"Оперативная память: ": "8 ГБ"
+			},
+			"price": 1125.33,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-9/wc250/6265196817.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 17,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 PRO 4/64GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.6",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi, ИК-порт"
+			},
+			"price": 817.94,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-y/wc250/6179208034.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 18,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M3 Pro 6/128GB, черный",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.53",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Процессор: ": "Dimensity 700 (8 ядер), 2.2 ГГц",
+					"Основной материал корпуса: ": "Пластик"
+			},
+			"price": 922.74,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-w/wc250/6067747424.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 19,
+			"brand": "Poco",
+			"category": "Smartphone",
+			"title": "Смартфон Poco M4 Pro 4G 6/128GB, синий",
+			"description": {
+					"Тип: ": "Смартфон",
+					"Диагональ экрана, дюймы: ": "6.43",
+					"Емкость аккумулятора, мАч: ": "5000",
+					"Основной материал корпуса: ": "Пластик",
+					"Беспроводные интерфейсы: ": "Bluetooth, GPS, NFC, Wi-Fi"
+			},
+			"price": 950.28,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-u/wc250/6274237302.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

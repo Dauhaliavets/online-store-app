@@ -1,0 +1,154 @@
+[
+	{
+			"id": 0,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": " Телевизор Horizont 43\"",
+			"description": {
+					"Тип: ": "Телевизор",
+					"Диагональ экрана, дюймы: ": "43",
+					"Разрешение: ": "1920×1080 Full HD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 1049,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-8/wc250/6213103664.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": "HD Телевизор Horizont 24\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "24",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "1280×720 HD",
+					"Smart TV: ": "Нет",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 488.83,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-y/wc250/6284253730.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 2,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": " Телевизор Horizont 32\"",
+			"description": {
+					"Тип: ": "Телевизор",
+					"Диагональ экрана, дюймы: ": "32",
+					"Разрешение: ": "1280×720 HD",
+					"Smart TV: ": "Нет",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 621.95,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-p/wc250/6273758389.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 3,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": " Телевизор Horizont 32\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "32",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "1280×720 HD",
+					"Smart TV: ": "Нет",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 696.5,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-q/wc250/6213069662.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 4,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": "HD Телевизор Horizont 24\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "24",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "1280×720 HD",
+					"Smart TV: ": "Нет",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 596.39,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-2/wc250/6212875094.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 5,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": "4K UHD Телевизор Horizont 65\"",
+			"description": {
+					"Тип: ": "Телевизор",
+					"Диагональ экрана, дюймы: ": "65",
+					"Разрешение: ": "3840×2160 4K UHD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 3550.64,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-v/wc250/6284314315.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 6,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": " Телевизор Horizont 50\"",
+			"description": {
+					"Тип: ": "Телевизор",
+					"Диагональ экрана, дюймы: ": "50",
+					"Разрешение: ": "1280×720 HD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 2230.07,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-v/wc250/6284273779.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 7,
+			"brand": "Horizont",
+			"category": "TV",
+			"title": "Full HD Телевизор Horizont 55\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "55",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "3840×2160 4K UHD",
+					"Smart TV: ": "Да",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 2805.15,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-1/wc250/6284295097.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]

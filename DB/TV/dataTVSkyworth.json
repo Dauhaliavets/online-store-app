@@ -1,0 +1,40 @@
+[
+	{
+			"id": 0,
+			"brand": "Skyworth",
+			"category": "TV",
+			"title": "Full HD Телевизор Skyworth 40\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "40",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "1920×1080 Full HD",
+					"Smart TV: ": "Нет",
+					"Тип подсветки: ": "Direct LED"
+			},
+			"price": 947.83,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-4/wc250/6275455192.jpg",
+			"isChoise": true,
+			"count": 1
+	},
+	{
+			"id": 1,
+			"brand": "Skyworth",
+			"category": "TV",
+			"title": " Телевизор Skyworth 40\"",
+			"description": {
+					"Диагональ экрана, дюймы: ": "40",
+					"Тип: ": "Телевизор",
+					"Разрешение: ": "1920×1080 Full HD",
+					"Тип подсветки: ": "Direct LED",
+					"Беспроводные интерфейсы: ": "ИК-порт"
+			},
+			"price": 995.76,
+			"discount": 0,
+			"currency": "BYN",
+			"src": "https://cdn1.ozone.ru/s3/multimedia-q/wc250/6015911702.jpg",
+			"isChoise": true,
+			"count": 1
+	}
+]
