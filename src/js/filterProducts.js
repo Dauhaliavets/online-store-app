@@ -12,23 +12,11 @@ function filterProducts(filter, products) {
   }
 
   if (Array.isArray(filter.brands) && filter.brands[0]) {
-    filteredProducts = filteredProducts.map(product => {
-      if (filter.brands.includes(product.brand)) {
-        return product
-      }
-      return null
-    })
-    filteredProducts = filteredProducts.filter(product => product)
+    filteredProducts = filteredProducts.filter(product => filter.brands.includes(product.brand))
   }
 
-// TODO: make filter by category
   if (filter.category) {
-    filteredProducts = filteredProducts.map(product => {
-      if (product.category === filter.category) {
-        return product
-      }
-      return null
-    })
+    filteredProducts = filterProducts.filter(product => product.category === filter.category)
   }
 
   return filteredProducts
