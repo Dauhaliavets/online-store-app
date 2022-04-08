@@ -111,12 +111,7 @@ export default function cartReducer(state = initialState, action) {
 				}),
 			];
 		case CART_ADD_PRODUCT:
-			state.forEach(product => {
-				if (product.id === action.payload.id){
-					action.payload.count += product.count
-				}
-			})
-			return [...state.filter(product => product.id !== action.payload.id), action.payload]
+			return [...state, action.payload]
 
 		default:
 			return state;
