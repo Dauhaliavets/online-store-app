@@ -20,7 +20,7 @@ function productsReducer(state = initialState, action) {
     case SET_PRODUCTS:
       return Object.assign({}, state, {
         all: [...action.payload],
-        visible: sortProducts(state.sort, [...action.payload])
+        visible: filterProducts(state.filter, sortProducts(state.sort, [...action.payload]))
       })
     case SET_SORT:
       return Object.assign({}, state, {
