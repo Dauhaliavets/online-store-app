@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/firebase.js';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
@@ -10,6 +10,7 @@ export function useAuth() {
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
+	const cart = useSelector(state => state.cart);
 
 	return {
 		loginError,
@@ -28,6 +29,7 @@ export function useAuth() {
 										password: userID.password.stringValue,
 										id: userID.id.stringValue,
 										token: userID.token.stringValue,
+										cart: cart
 									}
 								})
 								return navigate('/')
