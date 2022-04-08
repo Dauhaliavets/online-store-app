@@ -3,11 +3,20 @@ import s from "./FilterSideBar.module.css"
 import Filter from "./filter/Filter";
 import { useDispatch, useSelector } from "react-redux";
 import { setFilter } from "../../../../redux-store/actions/productsActions";
+import Categories from "./categories/Categories";
 
 function FilterSideBar() {
   const dispatch = useDispatch()
   const filter = useSelector(state => state.products.filter)
-  let brands = [...new Set(useSelector(state => state.products.all).map(product => product.brand))]
+
+  let brands = [...new Set(useSelector(state => state.products.all)
+    .filter(product => {
+    if (filter.category) {
+      return product.category === filter.category
+    }
+    return product
+  }).map(product => product.brand))]
+
   brands = brands.map(brand => {
     const isChecked = Array.isArray(filter.brands) && filter.brands.includes(brand)
 
@@ -25,10 +34,11 @@ function FilterSideBar() {
     </div>
   })
 
-
   return (
     <div className={s.wrapper}>
-      <h4>You can filter by:</h4>
+      <h4>Categories: </h4>
+      <Categories filter={filter}/>
+      <h4 className={s.section}>You can filter by:</h4>
       <Filter header={'Price'}>
         <p className={s.price_header}>Min price</p>
 
