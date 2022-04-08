@@ -16,7 +16,7 @@ function filterProducts(filter, products) {
   }
 
   if (filter.category) {
-    filteredProducts = filterProducts.filter(product => product.category === filter.category)
+    filteredProducts = filteredProducts.filter(product => product.category === filter.category)
   }
 
   return filteredProducts
