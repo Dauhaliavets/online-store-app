@@ -61,7 +61,7 @@ export default function Card({
 					})}
 				</div>
 				<div className={s.action_links}>
-					<SelectQuantity id={id} count={count} />
+					<SelectQuantity id={id} count={Number(count)} />
 					<span className={s.action_separator}></span>
 					<span className={s.action_link_delete} onClick={() => deleteCard(id)}>
 						{'Delete'}
