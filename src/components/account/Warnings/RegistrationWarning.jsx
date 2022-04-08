@@ -10,4 +10,4 @@ const RegistrationWarning = () => {
 	)
 }
 
-export default RegistrationWarning;
+export { RegistrationWarning };

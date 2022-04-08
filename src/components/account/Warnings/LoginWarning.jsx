@@ -10,4 +10,4 @@ const LoginWarning = () => {
 	)
 }
 
-export default LoginWarning;
+export { LoginWarning };

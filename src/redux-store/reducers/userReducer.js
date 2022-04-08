@@ -4,7 +4,7 @@ import { CART_ADD_PRODUCT, CHANGE_COUNT, DELETE_CARD } from '../actions/cartActi
 const initialState = {
 	name: null,
 	email: null,
-	password: null,
+	key: null,
 	id: null,
 	token: null,
 	cart: []

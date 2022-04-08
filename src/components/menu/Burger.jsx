@@ -28,4 +28,4 @@ const Burger = ({ menuToggle, setMenuToggle }) => {
 	)
 }
 
-export default Burger;
+export { Burger };

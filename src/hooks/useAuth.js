@@ -26,7 +26,6 @@ export function useAuth() {
 									type: 'ADD_USER', payload: {
 										name: userID.name.stringValue,
 										email: userID.email.stringValue,
-										password: userID.password.stringValue,
 										id: userID.id.stringValue,
 										token: userID.token.stringValue,
 										cart: cart
