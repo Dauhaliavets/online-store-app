@@ -1,0 +1,23 @@
+.confirm_order_wrapper {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.confirmForm {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.text_input {
+	width: 200px;
+	height: 20px;
+	font-size: 16px;
+}
+
+.error {
+	color: #ff0000;
+	font-size: 10px;
+}

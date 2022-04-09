@@ -14,7 +14,7 @@ export default function Card({
 		description,
 		discount,
 		id,
-		img,
+		src,
 		price,
 		title,
 		isChoise,
@@ -47,7 +47,7 @@ export default function Card({
 				)}
 			</div>
 			<div className={s.card_image}>
-				<img src={img} alt={title} />
+				<img src={src} alt={title} />
 			</div>
 			<div className={s.card_description}>
 				<h3 className={s.card_description_title}>{title}</h3>
