@@ -8,9 +8,9 @@ const initialState = {
 	id: null,
 	token: null,
 	cart: []
-}
+};
 
-export default function userReducer(state = initialState, action) {
+function userReducer(state = initialState, action) {
 	switch (action.type) {
 		case ADD_USER:
 			return { ...action.payload }
@@ -36,4 +36,6 @@ export default function userReducer(state = initialState, action) {
 		default:
 			return state
 	}
-}
+};
+
+export { userReducer };

@@ -1,4 +1,4 @@
-import actionCreator from "./actionCreator";
+import { actionCreator } from "./actionCreator";
 
 const TOGGLE_CHOISE = 'TOGGLE_CHOISE';
 const CHANGE_COUNT = 'CHANGE_COUNT';
@@ -13,13 +13,13 @@ const deleteCardAction = actionCreator(DELETE_CARD)
 
 const cartAddProduct = actionCreator(CART_ADD_PRODUCT)
 
-export { 
-	TOGGLE_CHOISE, 
-	CHANGE_COUNT, 
-	DELETE_CARD, 
+export {
+	TOGGLE_CHOISE,
+	CHANGE_COUNT,
+	DELETE_CARD,
 	CART_ADD_PRODUCT,
-	toogleChoiseAction, 
-	changeCountAction, 
+	toogleChoiseAction,
+	changeCountAction,
 	deleteCardAction,
 	cartAddProduct,
 };
