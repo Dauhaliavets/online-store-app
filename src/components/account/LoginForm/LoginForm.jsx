@@ -11,7 +11,7 @@ const LoginForm = () => {
 		register,
 		formState: {
 			errors,
-			isValid
+			isDirty
 		},
 		handleSubmit,
 		reset,
@@ -60,7 +60,7 @@ const LoginForm = () => {
 					/>
 					<p className={s.warning}>{errors?.password?.message}</p>
 				</div>
-				<input className={s.button} type="submit" disabled={!isValid} value='Continue' onClick={() => handleLogin(watch("email"), watch("password"))} />
+				<input className={s.button} type="submit" disabled={!isDirty} value='Continue' onClick={() => handleLogin(watch("email"), watch("password"))} />
 			</form>
 			<div className={s.subtitle}>
 				<p className={s.subtitle__text}>New to Amazon?</p>

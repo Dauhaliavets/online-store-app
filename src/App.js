@@ -8,13 +8,19 @@ import { useDispatch } from 'react-redux';
 import { fetchProducts } from './redux-store/thunk/asyncActions';
 import ProductListing from '../src/components/main/product_listing/ProductListing';
 import CartContainer from '../src/components/cart/CartContainer/CartContainer';
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from './firebase/firebase';
 
 function App() {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		dispatch(fetchProducts())
+		dispatch(fetchProducts());
 	})
+
+	onAuthStateChanged(auth, (user) => {
+
+	});
 
 	return (
 		<div className={s.wrapper}>

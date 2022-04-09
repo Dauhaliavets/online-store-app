@@ -11,7 +11,7 @@ const RegistrationForm = () => {
 		register,
 		formState: {
 			errors,
-			isValid
+			isDirty
 		},
 		handleSubmit,
 		reset,
@@ -122,7 +122,7 @@ const RegistrationForm = () => {
 					/>
 					<p className={s.warning}>{errors?.password_repeat?.message}</p>
 				</div>
-				<input className={s.button} type="submit" disabled={!isValid} value='Continue' onClick={() => handleRegistration(watch("name"), watch("email"), watch("key"), watch("password"))} />
+				<input className={s.button} type="submit" disabled={!isDirty} value='Continue' onClick={() => handleRegistration(watch("name"), watch("email"), watch("key"), watch("password"))} />
 				<p className={s.text}>Already have an account? <Link to='/authorization' className={s.link}>Sign in</Link></p>
 			</form>
 		</div>
