@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/firebase.js';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
+import { auth } from '../firebase/firebase.js';
 
 export function useAuth() {
 	const [loginError, setLoginError] = useState(false);
@@ -15,7 +16,6 @@ export function useAuth() {
 	return {
 		loginError,
 		handleLogin(email, password) {
-			const auth = getAuth();
 			signInWithEmailAndPassword(auth, email, password)
 				.then(({ user }) => {
 					getDoc(doc(db, "users", user.uid))

@@ -3,12 +3,19 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import arrow from '../../assets/icons/arrow.svg';
 import s from './Account.module.css';
+import { signOut } from "firebase/auth";
+import { auth } from '../../firebase/firebase';
 
 const Account = () => {
 	const [popupToggle, setPopupToggle] = useState(false);
 
 	const dispatch = useDispatch();
 	const user = useSelector(state => state.user);
+
+	const handleLogOut = () => {
+		signOut(auth);
+		dispatch({ type: 'REMOVE_USER' });
+	}
 
 	return (
 		<div className={s.wrapper} onClick={() => setPopupToggle(!popupToggle)}>
@@ -21,7 +28,7 @@ const Account = () => {
 			<div className={popupToggle ? s.popup : s.popup__off}>
 				<div className={s.triangle}></div>
 				{user.name
-					? <button className={s.button} onClick={() => dispatch({ type: 'REMOVE_USER' })}>Sign out</button>
+					? <button className={s.button} onClick={handleLogOut}>Sign out</button>
 					: <Link to='/authorization' className={s.button}>Sign in</Link>}
 				{user.name
 					? null
