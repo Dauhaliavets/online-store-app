@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
-import RegistrationWarning from '../Warnings/RegistrationWarning';
+import { RegistrationWarning } from '../Warnings/RegistrationWarning';
 import logo from '../../../assets/images/logo-dark.png';
 import s from './RegistrationForm.module.css';
 import { useReg } from '../../../hooks/useReg';
@@ -11,7 +11,7 @@ const RegistrationForm = () => {
 		register,
 		formState: {
 			errors,
-			isValid
+			isDirty
 		},
 		handleSubmit,
 		reset,
@@ -60,6 +60,29 @@ const RegistrationForm = () => {
 					<p className={s.warning}>{errors?.email?.message}</p>
 				</div>
 				<div className={s.field}>
+					<label htmlFor={s.name} className={s.label}>Your personal key</label>
+					<input
+						className={s.input}
+						type="password"
+						{...register('key', {
+							required: 'Name field can not be empty',
+							minLength: {
+								value: 4,
+								message: 'Your personal key must contain 4 numbers'
+							},
+							maxLength: {
+								value: 4,
+								message: 'Your personal key must contain 4 numbers'
+							},
+							pattern: {
+								value: /[0-9]/,
+								message: 'Your personal key must contain 4 numbers'
+							},
+						})}
+					/>
+					<p className={s.warning}>{errors?.key?.message}</p>
+				</div>
+				<div className={s.field}>
 					<label htmlFor={s.password} className={s.label}>Password</label>
 					<input
 						className={s.input}
@@ -99,11 +122,11 @@ const RegistrationForm = () => {
 					/>
 					<p className={s.warning}>{errors?.password_repeat?.message}</p>
 				</div>
-				<input className={s.button} type="submit" disabled={!isValid} value='Continue' onClick={() => handleRegistration(watch("name"), watch("email"), watch("password"))} />
+				<input className={s.button} type="submit" disabled={!isDirty} value='Continue' onClick={() => handleRegistration(watch("name"), watch("email"), watch("key"), watch("password"))} />
 				<p className={s.text}>Already have an account? <Link to='/authorization' className={s.link}>Sign in</Link></p>
 			</form>
 		</div>
 	)
 }
 
-export default RegistrationForm;
+export { RegistrationForm };

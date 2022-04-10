@@ -7,7 +7,7 @@ import {
 
 const initialState = [];
 
-export default function cartReducer(state = initialState, action) {
+function cartReducer(state = initialState, action) {
 	switch (action.type) {
 		case TOGGLE_CHOISE:
 			return [
@@ -39,4 +39,7 @@ export default function cartReducer(state = initialState, action) {
 		default:
 			return state;
 	}
-}
+};
+
+
+export { cartReducer };

@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Search.module.css';
-import Select from './Select';
-import Input from './Input';
-import Button from './Button';
+import { Select } from './Select/Select';
+import { Input } from './Input/Input';
+import { Button } from './Button/Button';
 
 const Search = () => {
 	return (
@@ -14,4 +14,4 @@ const Search = () => {
 	)
 }
 
-export default Search;
+export { Search };

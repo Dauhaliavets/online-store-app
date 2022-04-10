@@ -42,7 +42,6 @@ function Product({ product }) {
   }
 
   function cartRemoveHandler() {
-    console.log(product, cart);
     dispatch(deleteCardAction(product.id))
   }
 
