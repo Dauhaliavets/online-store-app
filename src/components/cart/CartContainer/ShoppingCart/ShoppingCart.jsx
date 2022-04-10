@@ -7,7 +7,7 @@ import Card from './Card/Card';
 import s from './ShoppingCart.module.css';
 
 export default function ShoppingCart() {
-	const cart = useSelector(state => state.cart);
+	const cart = useSelector(state => state.user.cart);
 	const totalPrice = getTotalPrice(cart);
 	const countItems = getItemCount(cart);
 

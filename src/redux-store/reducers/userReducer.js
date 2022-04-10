@@ -1,5 +1,10 @@
 import { ADD_USER, REMOVE_USER } from '../actions/userActions';
-import { CART_ADD_PRODUCT, CHANGE_COUNT, DELETE_CARD } from '../actions/cartActions';
+import {
+	CART_ADD_PRODUCT,
+	CHANGE_COUNT,
+	DELETE_CARD,
+	TOGGLE_CHOISE,
+} from '../actions/cartActions';
 
 const initialState = {
 	name: null,
@@ -21,17 +26,29 @@ export default function userReducer(state = initialState, action) {
 		case CHANGE_COUNT:
 			return {
 				...state, cart: [...state.cart.map((item) => {
-					if (item.id === action.payload.id) {
-						return { ...item, count: action.payload.newCount };
-					}
-					return item;
-				})],
+						if (item.id === action.payload.id) {
+							return { ...item, count: action.payload.newCount };
+						}
+						return item;
+					})],
+			};
+		case TOGGLE_CHOISE:
+			return {
+				...state,
+				cart: [
+					...state.cart.map((item) => {
+						if (item.id === action.payload) {
+							return { ...item, isChoise: !item.isChoise };
+						}
+						return item;
+					}),
+				],
 			};
 		case DELETE_CARD:
 			return {
 				...state, cart: [...state.cart.filter((item) => {
-					return item.id !== action.payload
-				})],
+						return item.id !== action.payload
+					})],
 			};
 		default:
 			return state
