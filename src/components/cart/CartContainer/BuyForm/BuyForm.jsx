@@ -1,12 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import getItemCount from '../../../../js/getItemCount.js';
 import getTotalCount from '../../../../js/getTotalPrice.js';
 import SubTotal from '../SubTotal/SubTotal';
 import s from './BuyForm.module.css';
 
 export default function BuyBox() {
-	const cart = useSelector((state) => state.cart);
+	const cart = useSelector((state) => state.user.cart);
 	const totalPrice = getTotalCount(cart);
 	const countItems = getItemCount(cart);
 
@@ -14,7 +15,9 @@ export default function BuyBox() {
 		<div className={s.wrapper}>
 			<form>
 				<SubTotal totalPrice={totalPrice} countItems={countItems} />
-				<div className={s.button}>{'Buy now'}</div>
+				<Link to='/cart/order'>
+					<div className={s.button}>{'Buy now'}</div>
+				</Link>
 			</form>
 		</div>
 	);

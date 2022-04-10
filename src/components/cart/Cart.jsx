@@ -5,7 +5,7 @@ import cartIcon from '../../assets/icons/cart.svg';
 import getItemCount from '../../js/getItemCount';
 
 const Cart = () => {
-	const cart = useSelector(state => state.cart);
+	const cart = useSelector(state => state.user.cart);
 	const countItems = getItemCount(cart);
 
 	return (
