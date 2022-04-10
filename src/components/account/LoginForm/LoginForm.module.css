@@ -4,9 +4,8 @@
 	align-items: center;
 	width: 100vw;
 	margin: 0 auto;
-	height: 100vh;
 	background-color: #fff;
-	padding-top: 20px;
+	padding: 20px 0 40px;
 }
 
 .form {
@@ -14,7 +13,7 @@
 	flex-direction: column;
 	align-items: center;
 	width: 350px;
-	height: 300px;
+	height: 330px;
 	padding: 14px 18px;
 	border: 1px #ddd solid;
 	border-radius: 4px;
@@ -76,7 +75,7 @@
 	background: linear-gradient(to bottom,#f8e3ad,#EEBA37);
 	font-size: 13px;
 	color: #111;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	cursor: pointer;
 }
 
@@ -96,7 +95,7 @@
 
 .subtitle__text {
 	font-size: 12px;
-	width: 110px;
+	width: 140px;
 	text-align: center;
 	background-color: #fff;
 	color: #767676;
@@ -127,4 +126,38 @@
 
 .button_grey:hover {
 	background: #e8e8eb;
+}
+
+.forgot {
+	display: block;
+	align-self: start;
+	padding-left: 10px;
+	font-size: 13px;
+	color: #0066c0;
+}
+
+.shadow {
+	height: 44px;
+	margin-bottom: -18px;
+	background: -webkit-linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+	background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+	z-index: 0;
+	zoom: 1;
+}
+
+.shadow::after {
+	display: block;
+	width: 100%;
+	height: 44px;
+	background-color: transparent;
+	background: -webkit-linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+	background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
+	z-index: 1;
+	content: "";
+}
+
+.about {
+	text-align: center;
+	font-size: 11px;
+	color: #555;
 }
