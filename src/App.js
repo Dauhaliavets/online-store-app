@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 import { fetchProducts } from './redux-store/thunk/asyncActions';
 import ProductListing from '../src/components/main/product_listing/ProductListing';
 import CartContainer from '../src/components/cart/CartContainer/CartContainer';
-import ConfirmOrderForm from './components/cart/CartContainer/BuyForm/ConfirmOrderForm/ConfirmOrderForm';
+import { ConfirmOrderContainer } from './components/cart/CartContainer/BuyForm/ConfirmOrderContainer/ConfirmOrderContainer';
 
 function App() {
 	const dispatch = useDispatch()
@@ -27,7 +27,7 @@ function App() {
 					<Route path="/" element={<Main />} />
 					<Route path="products" element={<ProductListing />} />
 					<Route path="cart" element={<CartContainer />} />
-					<Route path="cart/order" element={<ConfirmOrderForm />} />
+					<Route path="cart/order" element={<ConfirmOrderContainer />} />
 					<Route path="/registration" element={<RegistrationForm />} />
 					<Route path="/authorization" element={<LoginForm />} />
 				</Route>
