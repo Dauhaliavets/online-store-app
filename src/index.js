@@ -7,6 +7,7 @@ import { store } from './redux-store/store';
 import '../src/firebase/firebase';
 import { RegistrationForm } from './components/account/RegistrationForm/RegistrationForm';
 import { LoginForm } from './components/account/LoginForm/LoginForm';
+import { ForgotPassword } from './components/account/ForgotPassword/ForgotPassword';
 
 ReactDOM.render(
 	<Provider store={store}>
@@ -15,6 +16,7 @@ ReactDOM.render(
 				<Route path="*" element={<App />} />
 				<Route path="registration" element={<RegistrationForm />} />
 				<Route path="authorization" element={<LoginForm />} />
+				<Route path="forgot-password" element={<ForgotPassword />} />
 			</Routes>
 		</BrowserRouter>
 	</Provider>,
