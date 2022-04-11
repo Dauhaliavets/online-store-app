@@ -30,6 +30,7 @@ function App() {
 				<Route path="/" element={<Main />} />
 				<Route path="products" element={<ProductListing />} />
 				<Route path="cart" element={<CartContainer />} />
+				<Route path="cart/order" element={<ConfirmOrderContainer />} />
 			</Routes>
 			<Footer />
 		</div>
