@@ -8,6 +8,8 @@ import '../src/firebase/firebase';
 import { RegistrationForm } from './components/account/RegistrationForm/RegistrationForm';
 import { LoginForm } from './components/account/LoginForm/LoginForm';
 import { ForgotPassword } from './components/account/ForgotPassword/ForgotPassword';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 ReactDOM.render(
 	<Provider store={store}>

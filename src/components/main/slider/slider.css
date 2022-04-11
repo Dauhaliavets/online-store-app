@@ -1,0 +1,28 @@
+.slick-slider {
+	display: flex !important;
+	justify-content: center !important;
+	width: 1500px !important;
+	margin: 0 auto;
+}
+
+.slick-list {
+	display: block !important;
+	width: 1500px !important;
+}
+
+.previous,
+.next {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	transform: translate(0, -50%);
+	cursor: pointer;
+}
+
+.previous {
+	left: 25px;
+}
+
+.next {
+	right: 25px;
+}
