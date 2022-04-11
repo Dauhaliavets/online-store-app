@@ -21,6 +21,12 @@
 	align-items: center;
 }
 
+@media (max-width: 768px) {
+	.categories {
+		display: none;
+	}
+}
+
 .category {
 	font-size: 14px;
 	color: #fff;

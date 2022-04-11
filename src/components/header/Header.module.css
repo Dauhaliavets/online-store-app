@@ -12,6 +12,30 @@
 	background-color: #141920;
 }
 
+@media (max-width: 700px) {
+	.main {
+		flex-wrap: wrap;
+		height: auto;
+		padding: 10px 20px 0;
+		justify-content: space-between;
+	}
+}
+
 .logo {
+	display: block;
 	margin-right: 100px;
+	width: 135px;
+}
+
+@media (max-width: 1024px) {
+	.logo {
+		margin-right: 30px;
+		width: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo {
+		display: none;
+	}
 }
