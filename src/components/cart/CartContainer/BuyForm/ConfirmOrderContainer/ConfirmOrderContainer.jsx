@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import getItemCount from '../../../../../js/getItemCount';
 import getTotalPrice from '../../../../../js/getTotalPrice';
-import SubTotal from '../../SubTotal/SubTotal';
+import { SubTotal } from '../../SubTotal/SubTotal';
 import s from './ConfirmOrderContainer.module.css';
 import { OrderForm } from './OrderForm/OrderForm';
 

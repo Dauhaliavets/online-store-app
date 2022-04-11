@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './SubTotal.module.css';
 
-export default function SubTotal({ totalPrice, countItems }) {
+function SubTotal({ totalPrice, countItems }) {
 	const currency = 'BYN';
-
 
 	return (
 		<div className={styles.title}>
@@ -13,3 +12,5 @@ export default function SubTotal({ totalPrice, countItems }) {
 		</div>
 	)
 }
+
+export { SubTotal };

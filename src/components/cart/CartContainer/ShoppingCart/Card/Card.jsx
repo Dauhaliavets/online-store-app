@@ -7,7 +7,7 @@ import {
 import s from './Card.module.css';
 import { SelectQuantity } from './SelectQuantity/SelectQuantity';
 
-export default function Card({
+function Card({
 	data: {
 		category,
 		currency,
@@ -76,3 +76,5 @@ export default function Card({
 		</div>
 	);
 }
+
+export { Card };
