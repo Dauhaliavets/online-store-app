@@ -1,13 +1,13 @@
 .slick-slider {
 	display: flex !important;
 	justify-content: center !important;
-	width: 1500px !important;
+	width: 95vw !important;
 	margin: 0 auto;
 }
 
 .slick-list {
 	display: block !important;
-	width: 1500px !important;
+	width: 95vw !important;
 }
 
 .previous,
@@ -20,9 +20,9 @@
 }
 
 .previous {
-	left: 25px;
+	left: 30px;
 }
 
 .next {
-	right: 25px;
+	right: 30px;
 }

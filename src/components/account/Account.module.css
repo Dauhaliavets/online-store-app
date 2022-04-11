@@ -5,6 +5,12 @@
 	cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+	.wrapper {
+		margin-right: 10px;
+	}
+}
+
 .wrapper:hover {
 	border: 1px solid #fff;
 	border-radius: 2px;
@@ -14,21 +20,29 @@
 	position: absolute;
 	top: 100px;
 	left: 0;
-	width: 100vw;
+	width: 97vw;
 	height: calc(100vh - 100px);
 	backdrop-filter: blur(2px);
 	z-index: 3;
 }
 
+@media (max-width: 700px) {
+	.blur {
+		width: 95vw;
+	}
+}
+
 .main {
 	position: relative;
 	margin-right: 5px;
+	width: 115px;
 }
 
 .greeting {
 	font-size: 13px;
 	color: #fff;
 }
+
 
 .accounts {
 	font-size: 15px;
@@ -41,6 +55,21 @@
 	top: 0;
 	right: -10px;
 	margin-top: 27px;
+}
+
+@media (max-width: 500px) {
+	.greeting {
+		font-size: 11px;
+	}
+	.accounts {
+		font-size: 13px;
+	}
+	.arrow {
+		position: absolute;
+		top: 0;
+		right: 5px;
+		margin-top: 20px;
+	}
 }
 
 .popup {
@@ -59,6 +88,27 @@
 	cursor: auto;
 }
 
+@media (max-width: 1024px) {
+	.popup {
+		top: 52px;
+		right: 87px;
+	}
+}
+
+@media (max-width: 700px) {
+	.popup {
+		top: 105px;
+		left: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.popup {
+		top: 100px;
+		left: 5px;
+	}
+}
+
 .popup__off {
 	display: none;
 }
@@ -71,6 +121,18 @@
 	right: 38px;
 	background-color: #fff;
 	transform: rotate(45deg);
+}
+
+@media (max-width: 700px) {
+	.triangle {
+		right: 152px;
+	}
+}
+
+@media (max-width: 700px) {
+	.triangle {
+		right: 162px;
+	}
 }
 
 .button {
