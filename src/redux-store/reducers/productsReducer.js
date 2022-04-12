@@ -6,7 +6,6 @@ import { SET_FILTER, SET_PRODUCTS, SET_CHOSEN_PRODUCT, SET_SORT } from "../actio
 const initialState = {
 	all: [],
 	visible: [],
-	chosen: '',
 	sort: "Feature",
 	filter: {
 		priceMin: 0,
@@ -25,7 +24,7 @@ function productsReducer(state = initialState, action) {
 			})
 		case SET_CHOSEN_PRODUCT:
 			return Object.assign({}, state, {
-				chosen: action.payload
+				visible: [action.payload]
 			})
 		case SET_SORT:
 			return Object.assign({}, state, {

@@ -22,6 +22,7 @@ const Input = () => {
 			<input
 				className={s.input}
 				onChange={e => setInputValue(e.target.value)}
+				value={inputValue}
 				type="text"
 			/>
 			{inputValue.length > 0

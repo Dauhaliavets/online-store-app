@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 
 function Products() {
 	const products = useSelector(state => state.products.visible);
-	const chosenProduct = useSelector(state => state.products.chosen);
 
 	if (products.length < 1) return (
 		<div className={s.products}>
@@ -17,10 +16,7 @@ function Products() {
 
 	return (
 		<div className={s.products}>
-			{chosenProduct === ''
-				? visibleProducts
-				: <Product product={chosenProduct} key={chosenProduct.id} />
-			}
+			{ visibleProducts }
 		</div>
 	);
 };
