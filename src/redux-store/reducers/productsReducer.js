@@ -6,7 +6,6 @@ import { SET_FILTER, SET_PRODUCTS, SET_CHOSEN_PRODUCT, SET_SORT } from "../actio
 const initialState = {
 	all: [],
 	visible: [],
-	chosen: '',
 	sort: "Feature",
 	filter: {
 		priceMin: 0,
