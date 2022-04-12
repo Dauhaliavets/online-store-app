@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import s from "./FilterSideBar.module.css"
 import Filter from "./filter/Filter";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,6 +8,11 @@ import Categories from "./categories/Categories";
 function FilterSideBar() {
   const dispatch = useDispatch()
   const filter = useSelector(state => state.products.filter)
+  const categoriesFilter = useSelector(state => state.products.filter.category)
+
+  useEffect(() => {
+    dispatch(setFilter({brands: [], priceMin: 0, priceMax: 0}))
+  }, [categoriesFilter])
 
   let brands = [...new Set(useSelector(state => state.products.all)
     .filter(product => {
