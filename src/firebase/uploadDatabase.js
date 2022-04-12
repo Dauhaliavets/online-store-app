@@ -1,7 +1,7 @@
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from './firebase.js';
-import { database } from './database.js';
+import { catalog } from './database.js';
 
 export function uploadDatabase() {
-	addDoc(collection(db, "catalog"), database);
+	addDoc(collection(db, "database"), catalog);
 }
