@@ -4,19 +4,19 @@ import Select from 'react-select';
 import { changeCountAction } from '../../../../../../redux-store/actions/cartActions';
 
 const options = [
-	{ value: '1', label: '1' },
-	{ value: '2', label: '2' },
-	{ value: '3', label: '3' },
-	{ value: '4', label: '4' },
-	{ value: '5', label: '5' },
+	{ value: 1, label: '1' },
+	{ value: 2, label: '2' },
+	{ value: 3, label: '3' },
+	{ value: 4, label: '4' },
+	{ value: 5, label: '5' },
 ];
 
 const customStyles = {
 	menu: (provided) => ({
-    ...provided,
-    top: -8,
+		...provided,
+		top: -8,
 		width: 80,
-  }),
+	}),
 	option: (provided, state) => ({
 		...provided,
 		border: state.isSelected ? '1px solid #007185' : '1px solid #ffffff',
@@ -25,10 +25,10 @@ const customStyles = {
 		padding: 5,
 		paddingLeft: 15,
 		cursor: 'pointer',
-		"&:hover": {
+		'&:hover': {
 			backgroundColor: '#E3E6E6',
 			border: state.isSelected ? '1px solid #44C4F0' : '1px solid #C9CDCD',
-		}
+		},
 	}),
 	control: () => ({
 		padding: 0,
@@ -40,9 +40,9 @@ const customStyles = {
 		height: 30,
 		boxShadow: '4px 4px 8px 0px rgba(34, 60, 80, 0.2)',
 		cursor: 'pointer',
-		"&:hover": {
+		'&:hover': {
 			backgroundColor: '#E3E6E6',
-		}
+		},
 	}),
 	valueContainer: (provided) => ({
 		...provided,
@@ -64,12 +64,12 @@ const customStyles = {
 	},
 };
 
-export default function SelectQuantity({ id, count }) {
+function SelectQuantity({ id, count }) {
 	const [selectedOption, setSelectedOption] = useState(count);
 	const dispatch = useDispatch();
 
 	const defaultValueSelect = options.filter(
-		(option) => +option.value === count
+		(option) => option.value === selectedOption
 	);
 
 	const changeCount = (id, count) =>
@@ -89,3 +89,5 @@ export default function SelectQuantity({ id, count }) {
 		</>
 	);
 }
+
+export { SelectQuantity };

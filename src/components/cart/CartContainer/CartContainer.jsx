@@ -1,6 +1,6 @@
 import React from 'react';
-import BuyBox from './BuyForm/BuyForm';
-import ShoppingCart from '../CartContainer/ShoppingCart/ShoppingCart';
+import { BuyBox } from './BuyForm/BuyForm';
+import { ShoppingCart } from '../CartContainer/ShoppingCart/ShoppingCart';
 import s from './CartContainer.module.css';
 
 export default function CartContainer() {

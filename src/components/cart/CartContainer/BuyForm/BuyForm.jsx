@@ -3,10 +3,10 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import getItemCount from '../../../../js/getItemCount.js';
 import getTotalCount from '../../../../js/getTotalPrice.js';
-import SubTotal from '../SubTotal/SubTotal';
+import { SubTotal } from '../SubTotal/SubTotal';
 import s from './BuyForm.module.css';
 
-export default function BuyBox() {
+function BuyBox() {
 	const cart = useSelector((state) => state.user.cart);
 	const totalPrice = getTotalCount(cart);
 	const countItems = getItemCount(cart);
@@ -22,3 +22,5 @@ export default function BuyBox() {
 		</div>
 	);
 }
+
+export { BuyBox };

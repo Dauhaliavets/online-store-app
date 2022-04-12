@@ -5,16 +5,16 @@ import {
 	toogleChoiseAction,
 } from '../../../../../redux-store/actions/cartActions';
 import s from './Card.module.css';
-import SelectQuantity from './SelectQuantity/SelectQuantity';
+import { SelectQuantity } from './SelectQuantity/SelectQuantity';
 
-export default function Card({
+function Card({
 	data: {
 		category,
 		currency,
 		description,
 		discount,
 		id,
-		src,
+		img,
 		price,
 		title,
 		isChoise,
@@ -47,7 +47,7 @@ export default function Card({
 				)}
 			</div>
 			<div className={s.card_image}>
-				<img src={src} alt={title} />
+				<img src={img} alt={title} />
 			</div>
 			<div className={s.card_description}>
 				<h3 className={s.card_description_title}>{title}</h3>
@@ -61,7 +61,7 @@ export default function Card({
 					})}
 				</div>
 				<div className={s.action_links}>
-					<SelectQuantity id={id} count={Number(count)} />
+					<SelectQuantity id={id} count={count} />
 					<span className={s.action_separator}></span>
 					<span className={s.action_link_delete} onClick={() => deleteCard(id)}>
 						{'Delete'}
@@ -76,3 +76,5 @@ export default function Card({
 		</div>
 	);
 }
+
+export { Card };
