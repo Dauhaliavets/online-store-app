@@ -25,7 +25,7 @@ function productsReducer(state = initialState, action) {
 			})
 		case SET_CHOSEN_PRODUCT:
 			return Object.assign({}, state, {
-				chosen: action.payload
+				visible: [action.payload]
 			})
 		case SET_SORT:
 			return Object.assign({}, state, {
