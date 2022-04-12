@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import s from './Input.module.css';
 import { setChosenProduct } from '../../../redux-store/actions/productsActions';
+import { NavLink } from 'react-router-dom';
 
 const Input = () => {
 	const [inputValue, setInputValue] = useState('');
@@ -29,15 +30,17 @@ const Input = () => {
 				? <ul className={s.suggestions}>
 					{foundProducts.map(item => {
 						return (
-							<li
-								className={s.product}
-								key={item.id}
-								onClick={() => {
-									setChosen(item);
-									setInputValue('')
-								}}
-							>
-								{item.title}
+							<li className={s.product}>
+								<NavLink
+									to='/products'
+									key={item.id}
+									onClick={() => {
+										setChosen(item);
+										setInputValue('')
+									}}
+								>
+									{item.title}
+								</NavLink>
 							</li>
 						)
 					})}

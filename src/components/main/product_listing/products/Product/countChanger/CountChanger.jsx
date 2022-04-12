@@ -20,6 +20,9 @@ export function CountChanger({ product, cart }) {
   }
 
   function plusHandler() {
+    if (count >= 5) {
+      return 
+    } 
     dispatch(changeCountAction({id: product.id, newCount: +count + 1}))
   }
 
