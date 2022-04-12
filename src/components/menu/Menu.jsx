@@ -10,7 +10,7 @@ import { setFilter } from '../../redux-store/actions/productsActions';
 const Menu = () => {
 	const [menuToggle, setMenuToggle] = useState(false)
 	const dispatch = useDispatch()
-	const categories = [...new Set(useSelector(state => state.products.all.map(product => product.category)))].slice(0, 7)
+	const categories = [...new Set(useSelector(state => state.products.all.map(product => product.category)))]
 
 	const links = categories.map(categoryName => {
 		return (
