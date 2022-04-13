@@ -8,7 +8,7 @@ function Products() {
 	const [currentPage, setCurrentPage] = useState(1);
 	const catalog = useSelector(state => state.products.visible);
 
-	const products = catalog.map(product => <Product product={product} key={String(product.id)} />);
+	const products = catalog.map(product => <Product product={product} key={product.id} />);
 	const productsPerPage = 20;
 	const currentProducts = products.slice(currentPage * productsPerPage - productsPerPage, productsPerPage * currentPage)
 
