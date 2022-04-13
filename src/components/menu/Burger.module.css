@@ -62,6 +62,10 @@
 	cursor: pointer;
 }
 
+.link a {
+	color: #000
+}
+
 .list li:not(:last-child) {
 	margin-bottom: 15px;
 }
