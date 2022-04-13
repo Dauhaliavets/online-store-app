@@ -7,6 +7,9 @@ import { setSort } from '../../../../redux-store/actions/productsActions';
 function ResultAndSort() {
 	const dispatch = useDispatch()
 	const OPTIONS = ["Feature", "Price Min", "Price Max", "By Discount"]
+	const productsOnPageCount = useSelector(state => state.products.visible.length)
+	const query = useSelector(state => state.products.filter.searchQuery)
+	const filterCategory = useSelector(state => state.products.filter.category)
 	const sort = useSelector(state => state.products.sort)
 	const [isActive, setIsActive] = useState(false)
 	const selectEl = useRef(null)
@@ -42,7 +45,7 @@ function ResultAndSort() {
 		<>
 			<div className={s.wrapper}>
 				<div className={s.results}>
-					<span>1-16 of over 2,000 results for <span className={s.user_request}>"phone"</span></span>
+					<span>{productsOnPageCount} results for <span className={s.user_request}>"{query || filterCategory || "All categories"}"</span></span>
 				</div>
 				<div className={s.select} ref={selectEl}>
 					<button className={`${s.select_btn} ${isActive ? s.active : ''}` }
