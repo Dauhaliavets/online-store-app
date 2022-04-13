@@ -4,8 +4,7 @@ import s from './Input.module.css';
 import { setChosenProduct } from '../../../redux-store/actions/productsActions';
 import { NavLink } from 'react-router-dom';
 
-const Input = () => {
-	const [inputValue, setInputValue] = useState('');
+const Input = ({ inputValue, setInputValue }) => {
 	const dispatch = useDispatch();
 	const [chosen, setChosen] = useState('');
 	const products = useSelector(state => state.products.all);

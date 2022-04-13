@@ -11,7 +11,7 @@ function FilterSideBar() {
   const categoriesFilter = useSelector(state => state.products.filter.category)
 
   useEffect(() => {
-    dispatch(setFilter({brands: [], priceMin: 0, priceMax: 0}))
+    dispatch(setFilter({brands: [], priceMin: 0, priceMax: 0, searchQuery: ''}))
   }, [categoriesFilter])
 
   let brands = [...new Set(useSelector(state => state.products.all)
