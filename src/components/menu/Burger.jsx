@@ -13,8 +13,8 @@ const Burger = ({ menuToggle, setMenuToggle }) => {
 
 	const links = categories.map(categoryName => {
 		return (
-				<li className={s.link}>
-					<NavLink to='/products' key={categoryName} className={s.category}>
+				<li className={s.link} key={categoryName}>
+					<NavLink to='/products' className={s.category}>
 						<div onClick={() => {
 							dispatch(setFilter({ category: categoryName }))
 							setMenuToggle(false)

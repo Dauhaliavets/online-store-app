@@ -49,6 +49,10 @@
 	cursor: pointer;
 }
 
+.product a {
+	color: #000;
+}
+
 .product:hover {
 	background-color: #eee;
 }
