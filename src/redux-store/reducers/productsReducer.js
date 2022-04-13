@@ -40,7 +40,9 @@ function productsReducer(state = initialState, action) {
 			})
 		case SET_SEARCH_QUERY:
 			return Object.assign({}, state, {
-				filter: Object.assign({}, state.filter, {searchQuery: action.payload})
+				filter: Object.assign({}, state.filter, {searchQuery: action.payload}),
+				visible: filterProducts(Object.assign({}, state.filter, {searchQuery: action.payload}),
+					sortProducts(state.sort, [...state.all]))
 			})
 		default:
 			return state

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import s from './Search.module.css';
-import { Input } from './Input/Input';
 import { Button } from './Button/Button';
 import { useDispatch } from 'react-redux';
 import { setSearchQuery as setSearchFilter } from '../../redux-store/actions/productsActions';
+import { Input } from './Input/Input'
 
 const Search = () => {
 	const dispatch = useDispatch()

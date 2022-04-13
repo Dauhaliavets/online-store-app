@@ -29,10 +29,9 @@ const Input = ({ inputValue, setInputValue }) => {
 				? <ul className={s.suggestions}>
 					{foundProducts.map(item => {
 						return (
-							<li className={s.product}>
+							<li className={s.product} key={String(item.id)}>
 								<NavLink
 									to='/products'
-									key={item.id}
 									onClick={() => {
 										setChosen(item);
 										setInputValue('')
@@ -50,4 +49,4 @@ const Input = ({ inputValue, setInputValue }) => {
 	)
 };
 
-export { Input };
+export { Input }
