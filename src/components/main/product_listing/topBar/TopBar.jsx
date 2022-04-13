@@ -30,7 +30,7 @@ function ResultAndSort() {
 	useEffect(() => {
 		const closeSelect = (e) => {
 			const isNeedCloseSelect = selectEl.current && isActive && !selectEl.current.contains(e.target)
-			if(isNeedCloseSelect){
+			if (isNeedCloseSelect) {
 				setIsActive(false)
 			}
 		}
@@ -48,12 +48,12 @@ function ResultAndSort() {
 					<span>{productsOnPageCount} results for <span className={s.user_request}>"{query || filterCategory || "All categories"}"</span></span>
 				</div>
 				<div className={s.select} ref={selectEl}>
-					<button className={`${s.select_btn} ${isActive ? s.active : ''}` }
-					onClick={() => {setIsActive(!isActive)}}>
-						<span>Sort by: {sort}</span> 
-						<img className={isActive ? s.arrow_close : s.arrow} 
-						src={arrow}
-						alt=''/>
+					<button className={`${s.select_btn} ${isActive ? s.active : ''}`}
+						onClick={() => { setIsActive(!isActive) }}>
+						<span>Sort by: {sort}</span>
+						<img className={isActive ? s.arrow_close : s.arrow}
+							src={arrow}
+							alt='' />
 					</button>
 					<div className={`${s.options} ${isActive ? s.active : ''}`}>
 						{options}
