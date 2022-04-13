@@ -19,6 +19,10 @@ function filterProducts(filter, products) {
     filteredProducts = filteredProducts.filter(product => product.category === filter.category)
   }
 
+  if (filter.searchQuery) {
+    filteredProducts = filteredProducts.filter(product => product.title.toUpperCase().includes(filter.searchQuery.toUpperCase()) || product.category.toUpperCase().includes(filter.searchQuery.toUpperCase()))
+  }
+
   return filteredProducts
 }
 

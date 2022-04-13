@@ -4,8 +4,7 @@ import s from './Input.module.css';
 import { setChosenProduct } from '../../../redux-store/actions/productsActions';
 import { NavLink } from 'react-router-dom';
 
-const Input = () => {
-	const [inputValue, setInputValue] = useState('');
+const Input = ({ inputValue, setInputValue }) => {
 	const dispatch = useDispatch();
 	const [chosen, setChosen] = useState('');
 	const products = useSelector(state => state.products.all);
@@ -30,10 +29,9 @@ const Input = () => {
 				? <ul className={s.suggestions}>
 					{foundProducts.map(item => {
 						return (
-							<li className={s.product}>
+							<li className={s.product} key={String(item.id)}>
 								<NavLink
 									to='/products'
-									key={item.id}
 									onClick={() => {
 										setChosen(item);
 										setInputValue('')
@@ -51,4 +49,4 @@ const Input = () => {
 	)
 };
 
-export { Input };
+export { Input }
