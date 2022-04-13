@@ -12,7 +12,7 @@ function Products() {
 		</div>
 	);
 
-	const visibleProducts = products.map(product => <Product product={product} key={product.id} />)
+	const visibleProducts = products.map(product => <Product product={product} key={String(product.id)} />)
 
 	return (
 		<div className={s.products}>
