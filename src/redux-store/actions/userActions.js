@@ -1,5 +1,6 @@
 const ADD_USER = 'ADD_USER';
 const REMOVE_USER = 'REMOVE_USER';
+const CLEAR_CART = 'CLEAR_CART';
 
 function addUser(payload) {
 	return {
@@ -14,4 +15,10 @@ function removeUser() {
 	}
 }
 
-export { ADD_USER, REMOVE_USER, addUser, removeUser };
+function clearCart() {
+	return {
+		type: CLEAR_CART
+	}
+}
+
+export { ADD_USER, REMOVE_USER, CLEAR_CART, addUser, removeUser, clearCart };

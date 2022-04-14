@@ -32,11 +32,7 @@ function ConfirmOrderContainer() {
 				<SubTotal totalPrice={totalPrice} countItems={countItems}/>
 			</div>
 
-			<div className={s.user_data}>
-				<div className={s.user_name}>Name: {user.name}</div>
-				<div className={s.user_email}>E-mail: {user.email}</div>
-			</div>
-			<OrderForm />
+			<OrderForm userId={user.id} name={user.name} email={user.email} totalPrice={totalPrice}/>
 		</div>
 	);
 }
