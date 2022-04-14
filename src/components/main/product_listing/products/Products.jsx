@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import s from './Products.module.css'
 import Product from "./Product/Product";
 import { useSelector } from "react-redux";
+import { Pagination } from "./Product/pagination/Pagination";
 
-function Products() {
-	const products = useSelector(state => state.products.visible);
+function Products({ productsPerPage }) {
+	const [currentPage, setCurrentPage] = useState(1);
+	const catalog = useSelector(state => state.products.visible);
 
-	if (products.length < 1) return (
-		<div className={s.products}>
-			<h3 className={s.not_found}>Products not found...</h3>
-		</div>
-	);
+	const products = catalog.map(product => <Product product={product} key={product.id} />);
+	const currentProducts = products.slice(currentPage * productsPerPage - productsPerPage, productsPerPage * currentPage)
 
-	const visibleProducts = products.map(product => <Product product={product} key={product.id} />)
+	if (products.length < 1)
+		return (
+			<div className={s.products}>
+				<h3 className={s.not_found}>Products not found...</h3>
+			</div>
+		);
 
 	return (
 		<div className={s.products}>
-			{ visibleProducts }
+			{currentProducts}
+			<Pagination
+				productsPerPage={productsPerPage}
+				catalog={catalog}
+				currentPage={currentPage}
+				setCurrentPage={setCurrentPage}
+			/>
 		</div>
 	);
 };

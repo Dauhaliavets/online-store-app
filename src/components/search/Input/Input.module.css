@@ -11,6 +11,7 @@
 	padding: 0 15px;
 	border: transparent;
 	outline: none;
+	border-radius: 4px 0 0 4px;
 }
 
 .input:focus {
@@ -46,6 +47,10 @@
 	white-space: nowrap;
 	overflow: hidden;
 	cursor: pointer;
+}
+
+.product a {
+	color: #000;
 }
 
 .product:hover {

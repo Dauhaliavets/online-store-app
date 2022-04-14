@@ -1,6 +1,6 @@
 import filterProducts from "../../js/filterProducts";
 import sortProducts from "../../js/sortProducts";
-import { SET_FILTER, SET_PRODUCTS, SET_CHOSEN_PRODUCT, SET_SORT } from "../actions/productsActions";
+import { SET_FILTER, SET_PRODUCTS, SET_CHOSEN_PRODUCT, SET_SORT, SET_SEARCH_QUERY } from "../actions/productsActions";
 
 
 const initialState = {
@@ -11,6 +11,7 @@ const initialState = {
 		priceMin: 0,
 		priceMax: 0,
 		brands: [],
+		searchQuery: '',
 		category: ''
 	}
 };
@@ -32,9 +33,19 @@ function productsReducer(state = initialState, action) {
 				visible: sortProducts(action.payload, state.visible)
 			})
 		case SET_FILTER:
+			const queryReset = {}
+			if (action.payload.category) {
+				queryReset.searchQuery = ''
+			}
 			return Object.assign({}, state, {
-				filter: Object.assign({}, state.filter, action.payload),
-				visible: filterProducts(Object.assign({}, state.filter, action.payload),
+				filter: Object.assign({}, state.filter, action.payload, queryReset),
+				visible: filterProducts(Object.assign({}, state.filter, action.payload, queryReset),
+					sortProducts(state.sort, [...state.all]))
+			})
+		case SET_SEARCH_QUERY:
+			return Object.assign({}, state, {
+				filter: Object.assign({}, state.filter, {searchQuery: action.payload, category: ''}),
+				visible: filterProducts(Object.assign({}, state.filter, {searchQuery: action.payload}),
 					sortProducts(state.sort, [...state.all]))
 			})
 		default:

@@ -22,4 +22,8 @@
 
 .filter_body.active {
   display: block;
+  max-height: 230px;
+  margin-top: 10px;
+  padding: 5px;
+  overflow-y: scroll;
 }

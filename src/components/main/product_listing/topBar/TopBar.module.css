@@ -5,13 +5,14 @@
   padding: 0 84px 0 56px;
   background: #FFFFFF;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.09);
   z-index: 2;
 }
 
 .results {
+	flex: 1 1 auto;
   font-size: 14px;
   font-weight: 400;
   color: #000;
@@ -25,6 +26,11 @@
 
 .select {
   position: relative;
+}
+
+.select__amount {
+	position: relative;
+	margin-right: 20px;
 }
 
 .select_btn {
@@ -74,12 +80,14 @@
   transition: 0.3s ease-in;
 }
 
-.option {
+.option,
+.amount {
   margin-top: 5px;
   padding: 5px;
 }
 
-.option:hover {
+.option:hover,
+.amount:hover {
   background-color: #c9cccc;
   cursor: pointer;
 }

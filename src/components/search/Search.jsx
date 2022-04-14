@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './Search.module.css';
-import { Select } from './Select/Select';
-import { Input } from './Input/Input';
 import { Button } from './Button/Button';
+import { useDispatch } from 'react-redux';
+import { setSearchQuery as setSearchFilter } from '../../redux-store/actions/productsActions';
+import { Input } from './Input/Input'
+import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
+	const dispatch = useDispatch()
+	const navigate = useNavigate()
+	const [searchQuery, setSearchQuery] = useState("")
+	const productsPagePath = '/products'
+
 	return (
-		<div className={s.wrapper}>
-			<Select />
-			<Input />
+		<form className={s.wrapper} onSubmit={(e) => {
+			e.preventDefault()
+			dispatch(setSearchFilter(searchQuery))
+			setSearchQuery("")
+			navigate(productsPagePath)
+		}}>
+			<Input inputValue={searchQuery} setInputValue={setSearchQuery}/>
 			<Button />
-		</div>
+		</form>
 	)
 }
 
