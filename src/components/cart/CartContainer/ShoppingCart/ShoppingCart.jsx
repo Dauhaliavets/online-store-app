@@ -7,16 +7,16 @@ import { Card } from './Card/Card';
 import s from './ShoppingCart.module.css';
 
 function ShoppingCart() {
-	const cart = useSelector(state => state.user.cart);
+	const cart = useSelector((state) => state.user.cart);
 	const totalPrice = getTotalPrice(cart);
 	const countItems = getItemCount(cart);
+
+	const cards = cart.map((item, index) => <Card key={index} data={item} />);
 
 	return (
 		<div className={s.wrapper}>
 			<h3 className={s.title}>ShoppingCart</h3>
-			{
-				cart.map((item, index) => <Card key={index} data={item} />)
-			}
+			{cards}
 			<SubTotal totalPrice={totalPrice} countItems={countItems} />
 		</div>
 	);

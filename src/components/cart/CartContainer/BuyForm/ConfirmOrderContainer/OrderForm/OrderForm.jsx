@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Formik, Form, useField } from 'formik';
+import { Navigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import s from './OrderForm.module.css';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../../../../../firebase/firebase.js';
+import { useDispatch } from 'react-redux';
+import { clearCart } from '../../../../../../redux-store/actions/userActions';
 
 const TextInput = ({ label, ...props }) => {
 	const [field, meta] = useField(props);
@@ -21,7 +26,20 @@ const TextInput = ({ label, ...props }) => {
 	);
 };
 
-const OrderForm = () => {
+const OrderForm = ({ userId, name, email, totalPrice }) => {
+	const [key, setKey] = useState(null);
+	const dispatch = useDispatch();
+	const [success, setSuccess] = useState(false);
+
+	useEffect(() => {
+		getDoc(doc(db, 'users', userId)).then((response) =>
+			setKey(response.data().key)
+		);
+	}, []);
+
+	if (success) {
+		return <Navigate replace to='/' />;
+	}
 	return (
 		<div>
 			<Formik
@@ -38,12 +56,26 @@ const OrderForm = () => {
 						.matches(/[0-9]{4}/, 'secretKey must contain characters [0-9]')
 						.required('Required'),
 				})}
-				onSubmit={(values) => {
-					alert(JSON.stringify(values, null, 2));
+				onSubmit={(values, actions) => {
+					if (values.secretKey === key) {
+						alert(
+							`Success!!! Dear, ${name}! \n\r Your order in the amount of ${totalPrice} BYN has been sent to the address ${values.address}.\n\r Detailed instructions have been sent to your email: ${email}.`
+						);
+						actions.resetForm({ values: { address: '', secretKey: '' } });
+						dispatch(clearCart());
+						setSuccess(true);
+					} else {
+						alert('Failure. SecretKey incorrect');
+						actions.resetForm({ values: { ...values, secretKey: '' } });
+					}
 				}}
 			>
 				{({ dirty, isValid }) => (
 					<Form className={s.confirmForm}>
+						<div className={s.user_data}>
+							<div className={s.user_name}>Name: {name}</div>
+							<div className={s.user_email}>E-mail: {email}</div>
+						</div>
 						<TextInput
 							label='Enter your address:'
 							name='address'
@@ -56,7 +88,11 @@ const OrderForm = () => {
 							type='text'
 							placeholder='Secret'
 						/>
-						<button className={s.form_button} type='submit' disabled={!(dirty && isValid)}>
+						<button
+							className={s.form_button}
+							type='submit'
+							disabled={!(dirty && isValid)}
+						>
 							Confirm
 						</button>
 					</Form>

@@ -1,4 +1,4 @@
-import { ADD_USER, REMOVE_USER, SET_USER_COUNTRY } from '../actions/userActions';
+import { ADD_USER, REMOVE_USER, SET_USER_COUNTRY, CLEAR_CART } from '../actions/userActions';
 import {
 	CART_ADD_PRODUCT,
 	CHANGE_COUNT,
@@ -53,6 +53,8 @@ function userReducer(state = initialState, action) {
 					return item.id !== action.payload
 				})],
 			};
+		case CLEAR_CART:
+			return { ...state, cart: [] }
 		default:
 			return state
 	}
