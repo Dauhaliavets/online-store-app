@@ -14,7 +14,7 @@ export function useReg() {
 
 	return {
 		registrationError,
-		handleRegistration(name, email, key, password) {
+		handleRegistration(name, email, country, key, password) {
 			const auth = getAuth();
 			createUserWithEmailAndPassword(auth, email, password)
 				.then(({ user }) => {
@@ -26,12 +26,14 @@ export function useReg() {
 								key: key,
 								id: user.uid,
 								token: user.accessToken,
+								country: country,
 								cart: cart
 							}
 						})
 						setDoc(doc(db, "users", user.uid), {
 							name: name,
 							email: email,
+							country: country,
 							key: key,
 							password: password,
 							id: user.uid,
