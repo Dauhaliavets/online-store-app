@@ -61,6 +61,20 @@ const RegistrationForm = () => {
 						<p className={s.warning}>{errors?.email?.message}</p>
 					</div>
 					<div className={s.field}>
+						<label htmlFor={s.name} className={s.label}>Your country</label>
+						<input
+							className={s.input}
+							{...register('country', {
+								required: 'Name field can not be empty',
+								pattern: {
+									value: /[A-Za-z]/,
+									message: 'Country name must contain only letters'
+								},
+							})}
+						/>
+						<p className={s.warning}>{errors?.name?.message}</p>
+					</div>
+					<div className={s.field}>
 						<label htmlFor={s.name} className={s.label}>Your personal key</label>
 						<input
 							className={s.input}
@@ -123,7 +137,7 @@ const RegistrationForm = () => {
 						/>
 						<p className={s.warning}>{errors?.password_repeat?.message}</p>
 					</div>
-					<input className={s.button} type="submit" disabled={!isDirty} value='Continue' onClick={() => handleRegistration(watch("name"), watch("email"), watch("key"), watch("password"))} />
+					<input className={s.button} type="submit" disabled={!isDirty} value='Continue' onClick={() => handleRegistration(watch("name"), watch("email"), watch("country"), watch("key"), watch("password"))} />
 					<p className={s.text}>Already have an account? <Link to='/authorization' className={s.link}>Sign in</Link></p>
 				</form>
 			</div>

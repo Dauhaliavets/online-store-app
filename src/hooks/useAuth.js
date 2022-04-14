@@ -28,6 +28,7 @@ export function useAuth() {
 										email: userID.email.stringValue,
 										id: userID.id.stringValue,
 										token: userID.token.stringValue,
+										country: userID.country.stringValue,
 										cart: cart
 									}
 								})
