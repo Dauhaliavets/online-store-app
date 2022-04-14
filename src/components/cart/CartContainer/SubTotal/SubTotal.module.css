@@ -1,12 +1,13 @@
 .title {
 	margin-bottom: 5px;
 }
-.total_price {
-	font-weight: 700;
-}
 .count_items {
 	
 }
+.total_price {
+	font-weight: 700;
+	margin-left: 5px;
+}
 .currency {
-
+	margin-left: 5px;
 }

@@ -6,7 +6,7 @@ function SubTotal({ totalPrice, countItems }) {
 
 	return (
 		<div className={styles.title}>
-			<span className={styles.count_items}>{`Subtotal (${countItems} item): `}</span>
+			<span className={styles.count_items}>{`Subtotal (${countItems} item):`}</span>
 			<span className={styles.total_price}>{totalPrice}</span>
 			<span className={styles.currency}>{currency}</span>
 		</div>
