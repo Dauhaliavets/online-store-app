@@ -17,8 +17,9 @@ function Pagination(props) {
 		const dots = '...';
 		const leftDots = '... ';
 		const rightDots = ' ...';
-
-		if (currentPage >= 1 && currentPage <= 3) {
+		if (pagesNumber < 6) {
+			pages = [...pages]
+		} else if (currentPage >= 1 && currentPage <= 3) {
 			pages = [1, 2, 3, 4, dots, pages.length]
 		} else if (currentPage === 4) {
 			const slice = pages.slice(0, 5)
@@ -38,7 +39,7 @@ function Pagination(props) {
 		}
 
 		setPageNumbers(pages)
-	}, [currentPage])
+	}, [currentPage, productsPerPage, catalog])
 
 	return (
 		<div className={s.pagination}>

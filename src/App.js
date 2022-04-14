@@ -4,7 +4,7 @@ import s from './App.module.css';
 import { Header } from './components/header/Header';
 import { Main } from './components/main/Main';
 import { Footer } from './components/footer/Footer';
-import ProductListing from '../src/components/main/product_listing/ProductListing';
+import { ProductListing } from '../src/components/main/product_listing/ProductListing';
 import CartContainer from '../src/components/cart/CartContainer/CartContainer';
 import { ConfirmOrderContainer } from './components/cart/CartContainer/BuyForm/ConfirmOrderContainer/ConfirmOrderContainer';
 import { useResponse } from './hooks/useResponse';

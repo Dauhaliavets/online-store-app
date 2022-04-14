@@ -4,12 +4,11 @@ import Product from "./Product/Product";
 import { useSelector } from "react-redux";
 import { Pagination } from "./Product/pagination/Pagination";
 
-function Products() {
+function Products({ productsPerPage }) {
 	const [currentPage, setCurrentPage] = useState(1);
 	const catalog = useSelector(state => state.products.visible);
 
 	const products = catalog.map(product => <Product product={product} key={product.id} />);
-	const productsPerPage = 20;
 	const currentProducts = products.slice(currentPage * productsPerPage - productsPerPage, productsPerPage * currentPage)
 
 	if (products.length < 1)
