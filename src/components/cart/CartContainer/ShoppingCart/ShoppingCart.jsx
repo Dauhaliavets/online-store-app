@@ -42,6 +42,7 @@ function ShoppingCart() {
 				{(isEmptyCart && lastCard) && (
 					<h4 className={s.cards_container_subtitle}>
 						<NavLink
+							className={s.cards_container_subtitle_link}
 							to='/products'
 							onClick={() => {
 								dispatch(setChosenProduct(lastCard));

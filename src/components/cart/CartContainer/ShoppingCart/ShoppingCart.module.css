@@ -23,6 +23,17 @@
 .cards_container_subtitle {
 	font-weight: 400;
 }
+.cards_container_subtitle_link,
+.cards_container_subtitle_link:link,
+.cards_container_subtitle_link:visited {
+	text-decoration: none;
+	color: #007185;
+}
+.cards_container_subtitle_link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #c7511f;
+}
 .subtotal_wrapper {
 	display: flex;
 	justify-content: flex-end;
