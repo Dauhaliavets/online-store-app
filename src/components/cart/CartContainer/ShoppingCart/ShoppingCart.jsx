@@ -24,8 +24,6 @@ function ShoppingCart() {
 		}
 	}, [cart]);
 
-	console.log('lastCard: ', lastCard)
-
 	if (isEmptyCart) {
 		title = <h3 className={s.title}>Your Marathon Cart is empty.</h3>;
 	} else {
