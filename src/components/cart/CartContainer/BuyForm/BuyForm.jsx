@@ -15,9 +15,17 @@ function BuyBox() {
 		<div className={s.wrapper}>
 			<form>
 				<SubTotal totalPrice={totalPrice} countItems={countItems} />
-				<Link to='/cart/order'>
-					<div className={s.button}>{'Buy now'}</div>
-				</Link>
+				{countItems ? (
+					<Link to='/cart/order'>
+						<button className={s.button}>
+							{'Buy now'}
+						</button>
+					</Link>
+				) : (
+					<button className={s.button} disabled={!countItems}>
+						{'Buy now'}
+					</button>
+				)}
 			</form>
 		</div>
 	);

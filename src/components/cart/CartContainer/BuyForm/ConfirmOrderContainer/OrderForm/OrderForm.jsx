@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Formik, Form, useField } from 'formik';
-import { Navigate } from 'react-router-dom';
 import * as Yup from 'yup';
+import { ModalContainer } from './Modal/Modal';
 import s from './OrderForm.module.css';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../../../../firebase/firebase.js';
@@ -30,6 +30,7 @@ const OrderForm = ({ userId, name, email, totalPrice }) => {
 	const [key, setKey] = useState(null);
 	const dispatch = useDispatch();
 	const [success, setSuccess] = useState(false);
+	const [openModal, setOpenModal] = useState(false);
 
 	useEffect(() => {
 		getDoc(doc(db, 'users', userId)).then((response) =>
@@ -37,9 +38,8 @@ const OrderForm = ({ userId, name, email, totalPrice }) => {
 		);
 	}, []);
 
-	if (success) {
-		return <Navigate replace to='/' />;
-	}
+	const toggleOpenModal = () => setOpenModal(false);
+
 	return (
 		<div>
 			<Formik
@@ -58,44 +58,51 @@ const OrderForm = ({ userId, name, email, totalPrice }) => {
 				})}
 				onSubmit={(values, actions) => {
 					if (values.secretKey === key) {
-						alert(
-							`Success!!! Dear, ${name}! \n\r Your order in the amount of ${totalPrice} BYN has been sent to the address ${values.address}.\n\r Detailed instructions have been sent to your email: ${email}.`
-						);
+						setSuccess(true);
+						setOpenModal(true);
 						actions.resetForm({ values: { address: '', secretKey: '' } });
 						dispatch(clearCart());
-						setSuccess(true);
 					} else {
-						alert('Failure. SecretKey incorrect');
+						setOpenModal(true);
 						actions.resetForm({ values: { ...values, secretKey: '' } });
 					}
 				}}
 			>
-				{({ dirty, isValid }) => (
-					<Form className={s.confirmForm}>
-						<div className={s.user_data}>
-							<div className={s.user_name}>Name: {name}</div>
-							<div className={s.user_email}>E-mail: {email}</div>
-						</div>
-						<TextInput
-							label='Enter your address:'
-							name='address'
-							type='text'
-							placeholder='Address'
-						/>
-						<TextInput
-							label='Enter your secretKey:'
-							name='secretKey'
-							type='text'
-							placeholder='Secret'
-						/>
-						<button
-							className={s.form_button}
-							type='submit'
-							disabled={!(dirty && isValid)}
-						>
-							Confirm
-						</button>
-					</Form>
+				{({ dirty, isValid, values }) => (
+					<>
+						{openModal && (
+							<ModalContainer
+								success={success}
+								data={{ name, email, address: values.address, totalPrice }}
+								toggleOpenModal={toggleOpenModal}
+							/>
+						)}
+						<Form className={s.confirmForm}>
+							<div className={s.user_data}>
+								<div className={s.user_name}>Name: {name}</div>
+								<div className={s.user_email}>E-mail: {email}</div>
+							</div>
+							<TextInput
+								label='Enter your address:'
+								name='address'
+								type='text'
+								placeholder='Address'
+							/>
+							<TextInput
+								label='Enter your secretKey:'
+								name='secretKey'
+								type='text'
+								placeholder='Secret'
+							/>
+							<button
+								className={s.form_button}
+								type='submit'
+								disabled={!(dirty && isValid)}
+							>
+								Confirm
+							</button>
+						</Form>
+					</>
 				)}
 			</Formik>
 		</div>

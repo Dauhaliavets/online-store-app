@@ -5,5 +5,37 @@
 	background-color: #ffffff;
 }
 .title {
-	font-weight: 700;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 36px;
+}
+.sub_title {
+	margin-top: 4px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #565959;
+	text-align: right;
+}
+.cards_container {
+	padding: 0 0 10px 0;
+}
+.cards_container_subtitle {
+	font-weight: 400;
+}
+.cards_container_subtitle_link,
+.cards_container_subtitle_link:link,
+.cards_container_subtitle_link:visited {
+	text-decoration: none;
+	color: #007185;
+}
+.cards_container_subtitle_link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #c7511f;
+}
+.subtotal_wrapper {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }

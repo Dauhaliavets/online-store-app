@@ -9,9 +9,12 @@ function FilterSideBar() {
   const dispatch = useDispatch()
   const filter = useSelector(state => state.products.filter)
   const categoriesFilter = useSelector(state => state.products.filter.category)
+	const visible = useSelector(state => state.products.visible)
 
   useEffect(() => {
-    dispatch(setFilter({brands: [], priceMin: 0, priceMax: 0}))
+		if (visible.length !== 1) {
+			dispatch(setFilter({brands: [], priceMin: 0, priceMax: 0}))
+		}
   }, [categoriesFilter])
 
   let brands = [...new Set(useSelector(state => state.products.all)
