@@ -14,7 +14,10 @@ const Input = ({ inputValue, setInputValue }) => {
 	})
 
 	useEffect(() => {
-		dispatch(setChosenProduct(chosen))
+		if (chosen) {
+			dispatch(setChosenProduct(chosen))
+		}
+		setChosen('')
 	}, [dispatch, chosen])
 
 	return (
