@@ -43,7 +43,7 @@ function ShoppingCart() {
 							className={s.cards_container_subtitle_link}
 							to='/products'
 							onClick={() => {
-								dispatch(setChosenProduct(lastCard));
+								dispatch({type: 'SET_CHOSEN_PRODUCT', payload: lastCard});
 							}}
 						>
 							{lastCard.title}

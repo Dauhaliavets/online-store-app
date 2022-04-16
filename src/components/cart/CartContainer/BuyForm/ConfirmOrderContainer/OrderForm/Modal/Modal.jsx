@@ -1,12 +1,13 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import s from './Modal.module.css';
 
 function ModalContainer({ success, data, toggleOpenModal }) {
 	if (success) {
 		const closeAndRedirect = () => {
 			toggleOpenModal();
-			return <Navigate replace to='/' />;
+			return <Link to='/cart/order'></Link>
+			// return <Navigate replace to='/' />;
 		};
 		return (
 			<Modal
