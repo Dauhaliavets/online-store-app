@@ -12,7 +12,7 @@ function FilterSideBar() {
 	const visible = useSelector(state => state.products.visible)
 
   useEffect(() => {
-		if (visible.length !== 1) {
+		if (filter.brands.length) {
 			dispatch(setFilter({brands: [], priceMin: 0, priceMax: 0}))
 		}
   }, [categoriesFilter])
