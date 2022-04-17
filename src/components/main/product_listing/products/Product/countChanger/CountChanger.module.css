@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -22,4 +21,12 @@
 
 .btn:active {
   background-color: rgb(118, 118, 118);
+}
+
+.btn.minus {
+  margin-right: 10px;
+}
+
+.btn.plus {
+  margin: 0 10px;
 }

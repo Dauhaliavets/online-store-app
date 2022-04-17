@@ -28,10 +28,10 @@ export function CountChanger({ product, cart }) {
 
   return (
     <div className={s.count_changer}>
-      <button className={s.btn}
+      <button className={`${s.btn} ${s.minus}`}
       onClick={minusHandler}> - </button>
       {` ${count} `}
-      <button className={s.btn}
+      <button className={`${s.btn} ${s.plus}`}
       onClick={plusHandler}> + </button>
     </div>
   );
