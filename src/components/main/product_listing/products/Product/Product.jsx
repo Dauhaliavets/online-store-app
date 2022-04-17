@@ -8,7 +8,7 @@ function Product({ product }) {
   const [isDescriptionOpen, setDescriptionOpen] = useState(false)
   const descriptionToggler = useRef("")
   const dispatch = useDispatch()
-  const cart = useSelector(state => state.cart)
+  const cart = useSelector(state => state.user.cart)
   let isInCart = false
 
   if (!product) return "Not found"
