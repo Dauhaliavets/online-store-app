@@ -33,6 +33,13 @@
 	margin-bottom: 10px;
 }
 
+.image {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	align-items: center;
+}
+
 .image img{
 	width: 100%;
 	margin-bottom: 15px;
