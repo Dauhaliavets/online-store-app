@@ -36,6 +36,15 @@
 }
 .subtotal_wrapper {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 	align-items: center;
+}
+.link_clear_all {
+	font-size: 14px;
+	color: #007185;
+}
+.link_clear_all:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }

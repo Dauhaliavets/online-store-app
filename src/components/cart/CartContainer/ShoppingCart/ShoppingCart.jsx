@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { clearCart } from '../../../../redux-store/actions/cartActions';
 import { setChosenProduct } from '../../../../redux-store/actions/productsActions';
 import { SubTotal } from '../SubTotal/SubTotal';
 import { Card } from './Card/Card';
@@ -32,7 +33,7 @@ function ShoppingCart({ cart, totalPrice, countItems }) {
 			{title}
 			<h4 className={s.sub_title}>Price</h4>
 			<div className={s.cards_container}>
-				{(isEmptyCart && lastCard) && (
+				{isEmptyCart && lastCard && (
 					<h4 className={s.cards_container_subtitle}>
 						<NavLink
 							className={s.cards_container_subtitle_link}
@@ -50,6 +51,11 @@ function ShoppingCart({ cart, totalPrice, countItems }) {
 			</div>
 			<div className={s.subtotal_wrapper}>
 				<SubTotal totalPrice={totalPrice} countItems={countItems} />
+				{!isEmptyCart && (
+					<span className={s.link_clear_all} onClick={() => dispatch(clearCart())}>
+						Clear all
+					</span>
+				)}
 			</div>
 		</div>
 	);
