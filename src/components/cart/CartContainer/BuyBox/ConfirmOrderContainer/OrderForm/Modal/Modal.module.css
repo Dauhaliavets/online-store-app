@@ -1,5 +1,5 @@
 .modal_layout {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100vh;
@@ -7,12 +7,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(56, 56, 56, 0.699);
+	background-color: rgba(77, 77, 77, 0.87);
 	overflow: hidden;
 }
 .modal_wrapper {
-	width: 400px;
-	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 500px;
+	padding: 30px;
 	background-color: #fff;
 	border-radius: 10px;
 	display: flex;
@@ -29,9 +30,18 @@
 .modal_close {
 	width: 20px;
 	height: 20px;
+	background-image: url('../../../../../../../assets/icons/close-dark.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.3s;
+}
+.modal_close:hover {
+	background-size: 110%;
+	cursor: pointer;
+	transition: 0.3s;
 }
 .modal_content {
-	margin: 30px 0px;
+	margin: 40px 0px;
 }
 .modal_button {
 	margin: 0 auto;

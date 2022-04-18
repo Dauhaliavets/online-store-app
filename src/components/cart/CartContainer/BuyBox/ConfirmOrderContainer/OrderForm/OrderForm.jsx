@@ -6,7 +6,7 @@ import s from './OrderForm.module.css';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../../../../firebase/firebase.js';
 import { useDispatch } from 'react-redux';
-import { clearCart } from '../../../../../../redux-store/actions/userActions';
+import { deleteChosenCards } from '../../../../../../redux-store/actions/cartActions';
 
 const TextInput = ({ label, ...props }) => {
 	const [field, meta] = useField(props);
@@ -28,9 +28,9 @@ const TextInput = ({ label, ...props }) => {
 
 const OrderForm = ({ userId, name, email, totalPrice }) => {
 	const [key, setKey] = useState(null);
-	const dispatch = useDispatch();
-	const [success, setSuccess] = useState(false);
+	const [modalData, setModalData] = useState(false);
 	const [openModal, setOpenModal] = useState(false);
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		getDoc(doc(db, 'users', userId)).then((response) =>
@@ -38,7 +38,7 @@ const OrderForm = ({ userId, name, email, totalPrice }) => {
 		);
 	}, []);
 
-	const toggleOpenModal = () => setOpenModal(false);
+	const closeModal = () => setOpenModal(false);
 
 	return (
 		<div>
@@ -58,23 +58,22 @@ const OrderForm = ({ userId, name, email, totalPrice }) => {
 				})}
 				onSubmit={(values, actions) => {
 					if (values.secretKey === key) {
-						setSuccess(true);
+						setModalData({name, email, totalPrice, success: true, address: values.address});
 						setOpenModal(true);
 						actions.resetForm({ values: { address: '', secretKey: '' } });
-						dispatch(clearCart());
+						dispatch(deleteChosenCards());
 					} else {
 						setOpenModal(true);
 						actions.resetForm({ values: { ...values, secretKey: '' } });
 					}
 				}}
 			>
-				{({ dirty, isValid, values }) => (
+				{({ dirty, isValid }) => (
 					<>
 						{openModal && (
 							<ModalContainer
-								success={success}
-								data={{ name, email, address: values.address, totalPrice }}
-								toggleOpenModal={toggleOpenModal}
+								data={modalData}
+								closeModal={closeModal}
 							/>
 						)}
 						<Form className={s.confirmForm}>
