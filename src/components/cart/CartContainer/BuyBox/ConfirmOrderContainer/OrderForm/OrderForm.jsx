@@ -6,7 +6,7 @@ import s from './OrderForm.module.css';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../../../../firebase/firebase.js';
 import { useDispatch } from 'react-redux';
-import { clearCart } from '../../../../../../redux-store/actions/userActions';
+import { clearCart } from '../../../../../../redux-store/actions/cartActions';
 
 const TextInput = ({ label, ...props }) => {
 	const [field, meta] = useField(props);
@@ -28,9 +28,9 @@ const TextInput = ({ label, ...props }) => {
 
 const OrderForm = ({ userId, name, email, totalPrice }) => {
 	const [key, setKey] = useState(null);
-	const dispatch = useDispatch();
 	const [modalData, setModalData] = useState(false);
 	const [openModal, setOpenModal] = useState(false);
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		getDoc(doc(db, 'users', userId)).then((response) =>
@@ -68,7 +68,7 @@ const OrderForm = ({ userId, name, email, totalPrice }) => {
 					}
 				}}
 			>
-				{({ dirty, isValid, values }) => (
+				{({ dirty, isValid }) => (
 					<>
 						{openModal && (
 							<ModalContainer

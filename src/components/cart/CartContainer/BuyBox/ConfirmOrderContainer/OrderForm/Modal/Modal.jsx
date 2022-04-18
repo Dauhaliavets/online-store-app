@@ -2,35 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import s from './Modal.module.css';
 
-function ModalContainer({ data, closeModal }) {
-	const { name, email, totalPrice, success, address } = data;
-	const navigate = useNavigate();
-
-	const closeAndRedirect = () => {
-		closeModal();
-		return navigate('/cart');
-	};
-
-	if (success) {
-		return (
-			<Modal
-				title={`Success!!! Dear, ${name}!`}
-				content={`Your order in the amount of ${totalPrice} BYN has been sent to the address: ${address}.
-				Detailed instructions have been sent to your email: ${email}.`}
-				closeModal={() => closeAndRedirect()}
-			/>
-		);
-	} else {
-		return (
-			<Modal
-				title={'Failure!!!'}
-				content={'SecretKey incorrect. Try again.'}
-				closeModal={closeModal}
-			/>
-		);
-	}
-}
-
 function Modal({ title, content, closeModal }) {
 	return (
 		<div className={s.modal_layout}>
@@ -46,6 +17,35 @@ function Modal({ title, content, closeModal }) {
 			</div>
 		</div>
 	);
+}
+
+function ModalContainer({ data, closeModal }) {
+	const { name, email, totalPrice, success, address } = data;
+	const navigate = useNavigate();
+
+	const closeAndRedirect = () => {
+		closeModal();
+		return navigate('/cart');
+	};
+
+	if (success) {
+		return (
+			<Modal
+				title={`Success!!! Dear, ${name}!`}
+				content={`Your order in the amount of ${totalPrice} BYN has been sent to the address - ${address}.
+				Detailed instructions have been sent to your email: ${email}.`}
+				closeModal={() => closeAndRedirect()}
+			/>
+		);
+	} else {
+		return (
+			<Modal
+				title={'Failure!!!'}
+				content={'SecretKey incorrect. Try again.'}
+				closeModal={closeModal}
+			/>
+		);
+	}
 }
 
 export { ModalContainer };

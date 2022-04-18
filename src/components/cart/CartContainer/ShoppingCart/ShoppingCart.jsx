@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import getItemCount from '../../../../js/getItemCount';
-import getTotalPrice from '../../../../js/getTotalPrice';
 import { setChosenProduct } from '../../../../redux-store/actions/productsActions';
 import { SubTotal } from '../SubTotal/SubTotal';
 import { Card } from './Card/Card';
@@ -10,12 +8,9 @@ import s from './ShoppingCart.module.css';
 
 let title;
 
-function ShoppingCart() {
+function ShoppingCart({ cart, totalPrice, countItems }) {
 	const [lastCard, setLastCard] = useState(null);
 	const dispatch = useDispatch();
-	const cart = useSelector((state) => state.user.cart);
-	const totalPrice = getTotalPrice(cart);
-	const countItems = getItemCount(cart);
 	const isEmptyCart = !cart.length;
 
 	useEffect(() => {
