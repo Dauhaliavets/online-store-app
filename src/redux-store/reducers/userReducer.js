@@ -9,6 +9,7 @@ import {
 	DELETE_CARD,
 	TOGGLE_CHOISE,
 	CLEAR_CART,
+	DELETE_CHOSEN_CARDS,
 } from '../actions/cartActions';
 
 const initialState = {
@@ -66,6 +67,11 @@ function userReducer(state = initialState, action) {
 			};
 		case CLEAR_CART:
 			return { ...state, cart: [] };
+		case DELETE_CHOSEN_CARDS:
+			return {
+				...state,
+				cart: [...state.cart.filter((item) => !item.isChoise)],
+			};
 		default:
 			return state;
 	}

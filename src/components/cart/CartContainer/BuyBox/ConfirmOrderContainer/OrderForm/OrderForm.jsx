@@ -6,7 +6,7 @@ import s from './OrderForm.module.css';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../../../../firebase/firebase.js';
 import { useDispatch } from 'react-redux';
-import { clearCart } from '../../../../../../redux-store/actions/cartActions';
+import { deleteChosenCards } from '../../../../../../redux-store/actions/cartActions';
 
 const TextInput = ({ label, ...props }) => {
 	const [field, meta] = useField(props);
@@ -61,7 +61,7 @@ const OrderForm = ({ userId, name, email, totalPrice }) => {
 						setModalData({name, email, totalPrice, success: true, address: values.address});
 						setOpenModal(true);
 						actions.resetForm({ values: { address: '', secretKey: '' } });
-						dispatch(clearCart());
+						dispatch(deleteChosenCards());
 					} else {
 						setOpenModal(true);
 						actions.resetForm({ values: { ...values, secretKey: '' } });
