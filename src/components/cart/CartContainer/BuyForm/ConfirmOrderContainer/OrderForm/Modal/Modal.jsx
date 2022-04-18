@@ -1,29 +1,34 @@
 import React from 'react';
-import { Navigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import s from './Modal.module.css';
 
-function ModalContainer({ success, data, toggleOpenModal }) {
+function ModalContainer({ data, closeModal }) {
+	const { name, email, totalPrice, success, address } = data;
+	const navigate = useNavigate();
+
+	const closeAndRedirect = () => {
+		closeModal();
+		return navigate('/cart');
+	};
+
 	if (success) {
-		const closeAndRedirect = () => {
-			toggleOpenModal();
-			return <Link to='/cart/order'></Link>
-			// return <Navigate replace to='/' />;
-		};
 		return (
 			<Modal
-				title={`Success!!! Dear, ${data.name}!`}
-				content={`Your order in the amount of ${data.totalPrice} BYN has been sent to the address ${data.address}.\n\r Detailed instructions have been sent to your email: ${data.email}.`}
+				title={`Success!!! Dear, ${name}!`}
+				content={`Your order in the amount of ${totalPrice} BYN has been sent to the address: ${address}.
+				Detailed instructions have been sent to your email: ${email}.`}
 				closeModal={() => closeAndRedirect()}
 			/>
 		);
+	} else {
+		return (
+			<Modal
+				title={'Failure!!!'}
+				content={'SecretKey incorrect. Try again.'}
+				closeModal={closeModal}
+			/>
+		);
 	}
-	return (
-		<Modal
-			title={'Failure!!!'}
-			content={'SecretKey incorrect'}
-			closeModal={toggleOpenModal}
-		/>
-	);
 }
 
 function Modal({ title, content, closeModal }) {
@@ -32,7 +37,7 @@ function Modal({ title, content, closeModal }) {
 			<div className={s.modal_wrapper}>
 				<div className={s.modal_header}>
 					<h2 className={s.modal_title}>{title}</h2>
-					<div className={s.modal_close}>x</div>
+					<div className={s.modal_close} onClick={() => closeModal()}></div>
 				</div>
 				<div className={s.modal_content}>{content}</div>
 				<div className={s.modal_button} onClick={() => closeModal()}>
